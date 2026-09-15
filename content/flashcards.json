@@ -1,0 +1,302 @@
+[
+  {
+    "id": "fc-1.1-propositions-0",
+    "topic": "1.1-propositions",
+    "front": "What is a proposition?",
+    "back": "A declarative statement of fact with a truth value — either true or false, never both.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-negation-1",
+    "topic": "1.1-negation",
+    "front": "What does ¬p mean?",
+    "back": "It is not the case that p. Negation has the opposite truth value to p.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-conjunction-2",
+    "topic": "1.1-conjunction",
+    "front": "When is p ∧ q true?",
+    "back": "Both p and q must be true; false otherwise.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-disjunction-3",
+    "topic": "1.1-disjunction",
+    "front": "When is p ∨ q true?",
+    "back": "At least one is true, including when both are true. Or is inclusive by default.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-xor-4",
+    "topic": "1.1-xor",
+    "front": "When is p ⊕ q true?",
+    "back": "Exactly one proposition is true, not both.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-conditional-5",
+    "topic": "1.1-conditional",
+    "front": "When is p → q false?",
+    "back": "Only when p is true and q is false: the condition is met but the result does not follow.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-biconditional-6",
+    "topic": "1.1-biconditional",
+    "front": "When is p ↔ q true?",
+    "back": "When p and q have the same truth value.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-converse-7",
+    "topic": "1.1-converse",
+    "front": "Give the converse of p → q.",
+    "back": "q → p.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-inverse-8",
+    "topic": "1.1-inverse",
+    "front": "Give the inverse of p → q.",
+    "back": "¬p → ¬q.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-contrapositive-9",
+    "topic": "1.1-contrapositive",
+    "front": "Give the contrapositive of p → q.",
+    "back": "¬q → ¬p. This is equivalent to the original implication.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-allowed-10",
+    "topic": "1.3-allowed",
+    "front": "Which Table 7/8 identities may you cite?",
+    "back": "Only p → q ≡ ¬p ∨ q; p → q ≡ ¬q → ¬p; p ↔ q ≡ (p → q) ∧ (q → p). All of Table 6 is allowed. Other Table 7/8 identities must be derived.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-demorgan-11",
+    "topic": "1.3-demorgan",
+    "front": "State De Morgan for ¬(p ∧ q).",
+    "back": "¬(p ∧ q) ≡ ¬p ∨ ¬q — negate each piece and flip the connective.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-demorgan-12",
+    "topic": "1.3-demorgan",
+    "front": "State De Morgan for ¬(p ∨ q).",
+    "back": "¬(p ∨ q) ≡ ¬p ∧ ¬q.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-tautology-13",
+    "topic": "1.3-tautology",
+    "front": "What is a tautology?",
+    "back": "A compound proposition that is always true, no matter the truth values of its individual propositions.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-universal-14",
+    "topic": "1.4-universal",
+    "front": "What does ∀xP(x) mean?",
+    "back": "For every x in the domain, P(x) is true.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-existential-15",
+    "topic": "1.4-existential",
+    "front": "What does ∃xP(x) mean?",
+    "back": "There exists some (at least one) x in the domain so that P(x) is true.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-negating-16",
+    "topic": "1.4-negating",
+    "front": "Negate ∀xP(x).",
+    "back": "∃x¬P(x). Flip the quantifier, negate the inside.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-negating-17",
+    "topic": "1.4-negating",
+    "front": "Negate ∃xP(x).",
+    "back": "∀x¬P(x).",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-distribution-18",
+    "topic": "1.4-distribution",
+    "front": "Does ∀x distribute over ∨?",
+    "back": "No. ∀x(P(x) ∨ Q(x)) ≢ ∀xP(x) ∨ ∀xQ(x). Different x may satisfy different predicates.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-order-19",
+    "topic": "1.5-order",
+    "front": "Can mixed quantifiers be swapped?",
+    "back": "Not in general. ∀x∃y allows y to depend on x; ∃y∀x requires one y for every x.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-mp-20",
+    "topic": "1.6-mp",
+    "front": "State modus ponens.",
+    "back": "p → q, p, ∴ q.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-mt-21",
+    "topic": "1.6-mt",
+    "front": "State modus tollens.",
+    "back": "p → q, ¬q, ∴ ¬p.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-validity-22",
+    "topic": "1.6-validity",
+    "front": "Can a valid argument have false premises?",
+    "back": "Yes. Validity says that if all premises are true, the conclusion must be true.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-even-23",
+    "topic": "1.7-even",
+    "front": "Define an even integer.",
+    "back": "An integer n is even if there exists some integer k so that n = 2k.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-odd-24",
+    "topic": "1.7-odd",
+    "front": "Define an odd integer.",
+    "back": "An integer n is odd if there exists some integer k so that n = 2k + 1.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-rational-25",
+    "topic": "1.7-rational",
+    "front": "Define a rational number.",
+    "back": "A real number x is rational if there exist integers p, q with q ≠ 0 so that x = p/q.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-standard-26",
+    "topic": "2.1-standard",
+    "front": "Does ℕ include 0 in this class?",
+    "back": "Yes. ℕ = {0, 1, 2, 3, …}.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-sets-27",
+    "topic": "2.1-sets",
+    "front": "What is a set?",
+    "back": "An unordered collection of distinct objects which we call elements.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-power-28",
+    "topic": "2.1-power",
+    "front": "What is P(S)?",
+    "back": "The set of all subsets of S. If |S| = n, then |P(S)| = 2ⁿ.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-empty-29",
+    "topic": "2.1-empty",
+    "front": "Are ∅ and {∅} equal?",
+    "back": "No. ∅ has 0 elements. {∅} has 1 element: the empty set.",
+    "tags": [
+      "class"
+    ],
+    "priority": 1
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "1.1-propositions",
+    "section": "1.1",
+    "title": "propositions",
+    "order": 0,
+    "notes": "A declarative statement of fact with a truth value — either true or false, never both."
+  },
+  {
+    "id": "1.1-negation",
+    "section": "1.1",
+    "title": "negation",
+    "order": 1,
+    "notes": "It is not the case that p. Negation has the opposite truth value to p."
+  },
+  {
+    "id": "1.1-conjunction",
+    "section": "1.1",
+    "title": "conjunction",
+    "order": 2,
+    "notes": "Both p and q must be true; false otherwise."
+  },
+  {
+    "id": "1.1-disjunction",
+    "section": "1.1",
+    "title": "disjunction",
+    "order": 3,
+    "notes": "At least one is true, including when both are true. Or is inclusive by default."
+  },
+  {
+    "id": "1.1-xor",
+    "section": "1.1",
+    "title": "xor",
+    "order": 4,
+    "notes": "Exactly one proposition is true, not both."
+  },
+  {
+    "id": "1.1-conditional",
+    "section": "1.1",
+    "title": "conditional",
+    "order": 5,
+    "notes": "Only when p is true and q is false: the condition is met but the result does not follow."
+  },
+  {
+    "id": "1.1-biconditional",
+    "section": "1.1",
+    "title": "biconditional",
+    "order": 6,
+    "notes": "When p and q have the same truth value."
+  },
+  {
+    "id": "1.1-converse",
+    "section": "1.1",
+    "title": "converse",
+    "order": 7,
+    "notes": "q → p."
+  },
+  {
+    "id": "1.1-inverse",
+    "section": "1.1",
+    "title": "inverse",
+    "order": 8,
+    "notes": "¬p → ¬q."
+  },
+  {
+    "id": "1.1-contrapositive",
+    "section": "1.1",
+    "title": "contrapositive",
+    "order": 9,
+    "notes": "¬q → ¬p. This is equivalent to the original implication."
+  },
+  {
+    "id": "1.3-allowed",
+    "section": "1.3",
+    "title": "allowed",
+    "order": 10,
+    "notes": "Only p → q ≡ ¬p ∨ q; p → q ≡ ¬q → ¬p; p ↔ q ≡ (p → q) ∧ (q → p). All of Table 6 is allowed. Other Table 7/8 identities must be derived."
+  },
+  {
+    "id": "1.3-demorgan",
+    "section": "1.3",
+    "title": "demorgan",
+    "order": 12,
+    "notes": "¬(p ∨ q) ≡ ¬p ∧ ¬q."
+  },
+  {
+    "id": "1.3-tautology",
+    "section": "1.3",
+    "title": "tautology",
+    "order": 13,
+    "notes": "A compound proposition that is always true, no matter the truth values of its individual propositions."
+  },
+  {
+    "id": "1.4-universal",
+    "section": "1.4",
+    "title": "universal",
+    "order": 14,
+    "notes": "For every x in the domain, P(x) is true."
+  },
+  {
+    "id": "1.4-existential",
+    "section": "1.4",
+    "title": "existential",
+    "order": 15,
+    "notes": "There exists some (at least one) x in the domain so that P(x) is true."
+  },
+  {
+    "id": "1.4-negating",
+    "section": "1.4",
+    "title": "negating",
+    "order": 17,
+    "notes": "∀x¬P(x)."
+  },
+  {
+    "id": "1.4-distribution",
+    "section": "1.4",
+    "title": "distribution",
+    "order": 18,
+    "notes": "No. ∀x(P(x) ∨ Q(x)) ≢ ∀xP(x) ∨ ∀xQ(x). Different x may satisfy different predicates."
+  },
+  {
+    "id": "1.5-order",
+    "section": "1.5",
+    "title": "order",
+    "order": 19,
+    "notes": "Not in general. ∀x∃y allows y to depend on x; ∃y∀x requires one y for every x."
+  },
+  {
+    "id": "1.6-mp",
+    "section": "1.6",
+    "title": "mp",
+    "order": 20,
+    "notes": "p → q, p, ∴ q."
+  },
+  {
+    "id": "1.6-mt",
+    "section": "1.6",
+    "title": "mt",
+    "order": 21,
+    "notes": "p → q, ¬q, ∴ ¬p."
+  },
+  {
+    "id": "1.6-validity",
+    "section": "1.6",
+    "title": "validity",
+    "order": 22,
+    "notes": "Yes. Validity says that if all premises are true, the conclusion must be true."
+  },
+  {
+    "id": "1.7-even",
+    "section": "1.7",
+    "title": "even",
+    "order": 23,
+    "notes": "An integer n is even if there exists some integer k so that n = 2k."
+  },
+  {
+    "id": "1.7-odd",
+    "section": "1.7",
+    "title": "odd",
+    "order": 24,
+    "notes": "An integer n is odd if there exists some integer k so that n = 2k + 1."
+  },
+  {
+    "id": "1.7-rational",
+    "section": "1.7",
+    "title": "rational",
+    "order": 25,
+    "notes": "A real number x is rational if there exist integers p, q with q ≠ 0 so that x = p/q."
+  },
+  {
+    "id": "2.1-standard",
+    "section": "2.1",
+    "title": "standard",
+    "order": 26,
+    "notes": "Yes. ℕ = {0, 1, 2, 3, …}."
+  },
+  {
+    "id": "2.1-sets",
+    "section": "2.1",
+    "title": "sets",
+    "order": 27,
+    "notes": "An unordered collection of distinct objects which we call elements."
+  },
+  {
+    "id": "2.1-power",
+    "section": "2.1",
+    "title": "power",
+    "order": 28,
+    "notes": "The set of all subsets of S. If |S| = n, then |P(S)| = 2ⁿ."
+  },
+  {
+    "id": "2.1-empty",
+    "section": "2.1",
+    "title": "empty",
+    "order": 29,
+    "notes": "No. ∅ has 0 elements. {∅} has 1 element: the empty set."
+  }
+]
