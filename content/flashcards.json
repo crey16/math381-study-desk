@@ -298,5 +298,1930 @@
       "class"
     ],
     "priority": 1
+  },
+  {
+    "id": "fc-1.1-propositions-definition",
+    "topic": "1.1-propositions",
+    "front": "State the key facts: Propositions",
+    "back": "A proposition is a declarative statement of fact with a truth value — either true or false, never both. A false statement is still a proposition.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-propositions-recall",
+    "topic": "1.1-propositions",
+    "front": "Is a false declarative statement still a proposition?",
+    "back": "Yes. “8 is prime” is a false proposition.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-negation-definition",
+    "topic": "1.1-negation",
+    "front": "State the key facts: Negation",
+    "back": "¬p means “It is not the case that p” and reverses its truth value. Negate an inequality by including equality in the complement when needed.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-negation-recall",
+    "topic": "1.1-negation",
+    "front": "Negate x < 3.",
+    "back": "x ≥ 3.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-conjunction-definition",
+    "topic": "1.1-conjunction",
+    "front": "State the key facts: Conjunction",
+    "back": "p∧q is the proposition of both p and q. Both must be true, false otherwise.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-conjunction-recall",
+    "topic": "1.1-conjunction",
+    "front": "Translate “p but not q.”",
+    "back": "p ∧ ¬q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-disjunction-definition",
+    "topic": "1.1-disjunction",
+    "front": "State the key facts: Disjunction",
+    "back": "p∨q is true if at least one operand is true. Or is inclusive by default: one or the other or both.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-disjunction-recall",
+    "topic": "1.1-disjunction",
+    "front": "What is the only false row of p ∨ q?",
+    "back": "p=F and q=F.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-xor-definition",
+    "topic": "1.1-xor",
+    "front": "State the key facts: Inclusive and exclusive or",
+    "back": "p⊕q is exclusive or: exactly one proposition is true, not both. In class, “either … or” is a cue to examine exclusivity; explicit “or both” overrides it.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-xor-recall",
+    "topic": "1.1-xor",
+    "front": "How do ∨ and ⊕ differ on TT?",
+    "back": "∨ is true; ⊕ is false.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-conditional-definition",
+    "topic": "1.1-conditional",
+    "front": "State the key facts: Conditional and English forms",
+    "back": "p→q is false only if p is true and q is false. p is the condition and q its result. “p only if q,” “q is necessary for p,” “p is sufficient for q,” “q whenever p,” and “q unless ¬p” all express p→q.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-conditional-recall",
+    "topic": "1.1-conditional",
+    "front": "Translate “q is necessary for p.”",
+    "back": "p → q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-biconditional-definition",
+    "topic": "1.1-biconditional",
+    "front": "State the key facts: Biconditional",
+    "back": "p↔q means p if and only if q: (p→q)∧(q→p). It is true exactly when the inputs agree.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-biconditional-recall",
+    "topic": "1.1-biconditional",
+    "front": "Expand p ↔ q using conditionals.",
+    "back": "(p → q) ∧ (q → p).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-converse-definition",
+    "topic": "1.1-converse",
+    "front": "State the key facts: Converse",
+    "back": "The converse of p→q is q→p. It reverses hypothesis and conclusion.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-converse-recall",
+    "topic": "1.1-converse",
+    "front": "Is the converse equivalent to the original?",
+    "back": "Not generally; p=F,q=T separates them.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-inverse-definition",
+    "topic": "1.1-inverse",
+    "front": "State the key facts: Inverse",
+    "back": "The inverse of p→q is ¬p→¬q. It negates both parts without swapping them.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-inverse-recall",
+    "topic": "1.1-inverse",
+    "front": "Which related statement is equivalent to the inverse?",
+    "back": "The converse.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-contrapositive-definition",
+    "topic": "1.1-contrapositive",
+    "front": "State the key facts: Contrapositive",
+    "back": "The contrapositive of p→q is ¬q→¬p. It is the only one of converse, inverse, and contrapositive always equivalent to the original.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-contrapositive-recall",
+    "topic": "1.1-contrapositive",
+    "front": "Contrapose (p ∧ q) → r.",
+    "back": "¬r → (¬p ∨ ¬q).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-truth-tables-definition",
+    "topic": "1.1-truth-tables",
+    "front": "State the key facts: Compound truth tables",
+    "back": "A truth table lists every assignment to its propositional variables. With n distinct variables it has 2ⁿ rows. Compute inner subexpressions before the outer connective.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-truth-tables-recall",
+    "topic": "1.1-truth-tables",
+    "front": "How many rows for p,q,r?",
+    "back": "2³=8.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.1-precedence-definition",
+    "topic": "1.1-precedence",
+    "front": "State the key facts: Operator precedence",
+    "back": "Parentheses first; then ¬, ∧, ∨, →, ↔ in decreasing binding strength. Use parentheses when mixing XOR or chaining implications to avoid ambiguity.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-precedence-recall",
+    "topic": "1.1-precedence",
+    "front": "Parse ¬p ∨ q ∧ r.",
+    "back": "(¬p) ∨ (q ∧ r).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-tautology-definition",
+    "topic": "1.3-tautology",
+    "front": "State the key facts: Tautology, contradiction, contingency",
+    "back": "A tautology is always true; a contradiction is always false; a contingency is true on some assignments and false on others.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-tautology-recall",
+    "topic": "1.3-tautology",
+    "front": "Define a contingency.",
+    "back": "A compound proposition that is true on some assignments and false on others.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-equivalence-definition",
+    "topic": "1.3-equivalence",
+    "front": "State the key facts: Logical equivalence",
+    "back": "p≡q means p↔q is a tautology. Prove this with matching truth-table columns or a chain of already-known equivalences.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-equivalence-recall",
+    "topic": "1.3-equivalence",
+    "front": "What suffices to disprove equivalence?",
+    "back": "One assignment where the formulas have different truth values.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-allowed-definition",
+    "topic": "1.3-allowed",
+    "front": "State the key facts: The only citable Table 7/8 identities",
+    "back": "All Table 6 identities are allowed. From Tables 7/8 ONLY: p→q≡¬p∨q (7.1); p→q≡¬q→¬p (contrapositive); p↔q≡(p→q)∧(q→p) (biconditional). Other identities must be derived.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-allowed-recall",
+    "topic": "1.3-allowed",
+    "front": "May all of Tables 7 and 8 be cited?",
+    "back": "No. Only conditional-disjunction, contrapositive, and the biconditional definition.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-successive-substitution-definition",
+    "topic": "1.3-successive-substitution",
+    "front": "State the key facts: Successive substitution",
+    "back": "Write one equivalent expression per line, give the law that justifies the change, and end with ∎. Each substitution may replace a subexpression by an equivalent one.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-successive-substitution-recall",
+    "topic": "1.3-successive-substitution",
+    "front": "How do you negate an implication using allowed laws?",
+    "back": "7.1: ¬(¬p∨q); DM: ¬¬p∧¬q; DN: p∧¬q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-tautology-proofs-definition",
+    "topic": "1.3-tautology-proofs",
+    "front": "State the key facts: Tautologies by equivalences",
+    "back": "To prove a tautology by equivalences, reduce the expression to T using only allowed laws.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-tautology-proofs-recall",
+    "topic": "1.3-tautology-proofs",
+    "front": "What should the final line of a tautology equivalence proof be?",
+    "back": "≡ T, with its law and ∎.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-identity-definition",
+    "topic": "1.3-identity",
+    "front": "State the key facts: Identity law (Table 6)",
+    "back": "p ∧ T ≡ p; p ∨ F ≡ p. The neutral truth value leaves p unchanged.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-identity-recall",
+    "topic": "1.3-identity",
+    "front": "State identity in all Table 6 forms.",
+    "back": "p ∧ T ≡ p; p ∨ F ≡ p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-dom-definition",
+    "topic": "1.3-dom",
+    "front": "State the key facts: Domination law (Table 6)",
+    "back": "p ∨ T ≡ T; p ∧ F ≡ F. A true disjunct or false conjunct determines the result.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-dom-recall",
+    "topic": "1.3-dom",
+    "front": "State domination in all Table 6 forms.",
+    "back": "p ∨ T ≡ T; p ∧ F ≡ F.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-idem-definition",
+    "topic": "1.3-idem",
+    "front": "State the key facts: Idempotent law (Table 6)",
+    "back": "p ∨ p ≡ p; p ∧ p ≡ p. Repeating a proposition adds no information.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-idem-recall",
+    "topic": "1.3-idem",
+    "front": "State idempotent in all Table 6 forms.",
+    "back": "p ∨ p ≡ p; p ∧ p ≡ p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-dn-definition",
+    "topic": "1.3-dn",
+    "front": "State the key facts: Double negation law (Table 6)",
+    "back": "¬¬p ≡ p. Two negations cancel.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-dn-recall",
+    "topic": "1.3-dn",
+    "front": "State double negation in all Table 6 forms.",
+    "back": "¬¬p ≡ p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-comm-definition",
+    "topic": "1.3-comm",
+    "front": "State the key facts: Commutative law (Table 6)",
+    "back": "p ∨ q ≡ q ∨ p; p ∧ q ≡ q ∧ p. Swap operands of the same connective.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-comm-recall",
+    "topic": "1.3-comm",
+    "front": "State commutative in all Table 6 forms.",
+    "back": "p ∨ q ≡ q ∨ p; p ∧ q ≡ q ∧ p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-assoc-definition",
+    "topic": "1.3-assoc",
+    "front": "State the key facts: Associative law (Table 6)",
+    "back": "p ∨ (q ∨ r) ≡ (p ∨ q) ∨ r; p ∧ (q ∧ r) ≡ (p ∧ q) ∧ r. Regroup all ands or all ors.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-assoc-recall",
+    "topic": "1.3-assoc",
+    "front": "State associative in all Table 6 forms.",
+    "back": "p ∨ (q ∨ r) ≡ (p ∨ q) ∨ r; p ∧ (q ∧ r) ≡ (p ∧ q) ∧ r.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-dist-definition",
+    "topic": "1.3-dist",
+    "front": "State the key facts: Distributive law (Table 6)",
+    "back": "p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r); p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r). Think of ands with ors; both distributive patterns are valid.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-dist-recall",
+    "topic": "1.3-dist",
+    "front": "State distributive in all Table 6 forms.",
+    "back": "p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r); p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-demorgan-definition",
+    "topic": "1.3-demorgan",
+    "front": "State the key facts: De Morgan law (Table 6)",
+    "back": "¬(p ∧ q) ≡ ¬p ∨ ¬q; ¬(p ∨ q) ≡ ¬p ∧ ¬q. Negate each piece and flip the connective.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-demorgan-recall",
+    "topic": "1.3-demorgan",
+    "front": "State de morgan in all Table 6 forms.",
+    "back": "¬(p ∧ q) ≡ ¬p ∨ ¬q; ¬(p ∨ q) ≡ ¬p ∧ ¬q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-abs-definition",
+    "topic": "1.3-abs",
+    "front": "State the key facts: Absorption law (Table 6)",
+    "back": "p ∨ (p ∧ q) ≡ p; p ∧ (p ∨ q) ≡ p. The standalone p absorbs the more complicated term.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-abs-recall",
+    "topic": "1.3-abs",
+    "front": "State absorption in all Table 6 forms.",
+    "back": "p ∨ (p ∧ q) ≡ p; p ∧ (p ∨ q) ≡ p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.3-neg-definition",
+    "topic": "1.3-neg",
+    "front": "State the key facts: Negation law law (Table 6)",
+    "back": "p ∨ ¬p ≡ T; p ∧ ¬p ≡ F. A proposition and its negation exhaust the possibilities.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.3-neg-recall",
+    "topic": "1.3-neg",
+    "front": "State negation law in all Table 6 forms.",
+    "back": "p ∨ ¬p ≡ T; p ∧ ¬p ≡ F.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-predicates-definition",
+    "topic": "1.4-predicates",
+    "front": "State the key facts: Predicates and propositional functions",
+    "back": "The predicate is the property or relationship part of a sentence; the subject is what it is about. A propositional function P(x) depends on an input that can change.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-predicates-recall",
+    "topic": "1.4-predicates",
+    "front": "What changes a predicate into a proposition?",
+    "back": "Specify all free inputs, or bind them with quantifiers over a domain.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-domains-definition",
+    "topic": "1.4-domains",
+    "front": "State the key facts: Domains",
+    "back": "The domain is the allowed set of inputs. Stipulations on the subject are part of the meaning of a quantified statement.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-domains-recall",
+    "topic": "1.4-domains",
+    "front": "Why does ∀x(x²≥x) fail over ℝ?",
+    "back": "At x=1/2, x²=1/4<1/2.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-universal-definition",
+    "topic": "1.4-universal",
+    "front": "State the key facts: Universal quantification",
+    "back": "The universal quantification of P(x) says: for every x in the domain, P(x) is true. Notation ∀x∈D P(x).",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-universal-recall",
+    "topic": "1.4-universal",
+    "front": "How many counterexamples refute ∀xP(x)?",
+    "back": "One element of the domain where P is false.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-existential-definition",
+    "topic": "1.4-existential",
+    "front": "State the key facts: Existential quantification",
+    "back": "There exists some (at least one) x in the domain so that P(x) is true: ∃xP(x).",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-existential-recall",
+    "topic": "1.4-existential",
+    "front": "What establishes ∃xP(x)?",
+    "back": "One witness x in the domain for which P(x) is true.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-counterexamples-definition",
+    "topic": "1.4-counterexamples",
+    "front": "State the key facts: Counterexamples",
+    "back": "A counterexample to ∀xP(x) is a domain element a with P(a) false. To refute ∃xP(x), show every candidate fails.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-counterexamples-recall",
+    "topic": "1.4-counterexamples",
+    "front": "Refute ∀x∈ℕ(x²>0).",
+    "back": "x=0 is a counterexample.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-bound-free-definition",
+    "topic": "1.4-bound-free",
+    "front": "State the key facts: Bound and free variables",
+    "back": "A variable occurrence is bound when it falls in the scope of its matching quantifier; otherwise it is free. A statement with a free variable need not have a fixed truth value.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-bound-free-recall",
+    "topic": "1.4-bound-free",
+    "front": "Which variable is free in ∀xP(x,y)?",
+    "back": "y is free; x is bound.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-distribution-definition",
+    "topic": "1.4-distribution",
+    "front": "State the key facts: Quantifier distribution: two laws, two failures",
+    "back": "∀x(P∧Q) ≡ ∀xP∧∀xQ; ∃x(P∨Q) ≡ ∃xP∨∃xQ. But ∀x(P∨Q) ≢ ∀xP∨∀xQ, and ∃x(P∧Q) ≢ ∃xP∧∃xQ.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-distribution-recall",
+    "topic": "1.4-distribution",
+    "front": "Which connectives distribute through ∀ and ∃?",
+    "back": "∀ through ∧; ∃ through ∨. The other two proposed distributions are not equivalences.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-negating-definition",
+    "topic": "1.4-negating",
+    "front": "State the key facts: Negating quantified statements",
+    "back": "¬∀xP(x) ≡ ∃x¬P(x); ¬∃xP(x) ≡ ∀x¬P(x). Flip the quantifier, negate the inside.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-negating-recall",
+    "topic": "1.4-negating",
+    "front": "Negate “Some student is taking Calc 3.”",
+    "back": "No student is taking Calc 3: ∀x¬T(x), domain students in this class.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.4-translation-definition",
+    "topic": "1.4-translation",
+    "front": "State the key facts: One-quantifier translations",
+    "back": "State the domain and define each predicate first. All A are B becomes ∀x(A(x)→B(x)); some A are B becomes ∃x(A(x)∧B(x)).",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.4-translation-recall",
+    "topic": "1.4-translation",
+    "front": "Why use ∧ in “some A are B”?",
+    "back": "The same witness must actually be A and B.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-nested-definition",
+    "topic": "1.5-nested",
+    "front": "State the key facts: Nested quantifiers",
+    "back": "A quantifier is nested when it falls in the scope of another. Predicates with multiple inputs allow one quantifier per variable.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-nested-recall",
+    "topic": "1.5-nested",
+    "front": "What does ∀x∃yP(x,y) allow y to depend on?",
+    "back": "The previously chosen x.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-order-definition",
+    "topic": "1.5-order",
+    "front": "State the key facts: Quantifier order",
+    "back": "Same-kind quantifiers commute: ∀x∀y and ∃x∃y can be swapped. Mixed quantifiers cannot generally be swapped. ∃y∀xP(x,y) implies ∀x∃yP(x,y).",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-order-recall",
+    "topic": "1.5-order",
+    "front": "Which is stronger: ∃y∀xP or ∀x∃yP?",
+    "back": "∃y∀xP; one common witness works for every x.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-nests-definition",
+    "topic": "1.5-nests",
+    "front": "State the key facts: Truth values of the four nests",
+    "back": "For x+y=0 over ℝ: ∀∀ false, ∀∃ true, ∃∀ false, ∃∃ true. The justification matters as much as the letters.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-nests-recall",
+    "topic": "1.5-nests",
+    "front": "Why is ∃x∀y(x+y=0) false over ℝ?",
+    "back": "For any proposed x, choose y=1−x; then the sum is 1.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-translation-definition",
+    "topic": "1.5-translation",
+    "front": "State the key facts: Nested translations",
+    "back": "Specify each variable domain and predicate before translating. Universal choices come before witnesses that may depend on them.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-translation-recall",
+    "topic": "1.5-translation",
+    "front": "Translate nonzero real numbers have multiplicative inverses.",
+    "back": "∀x∈ℝ ∃y∈ℝ (x≠0→xy=1).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-unique-definition",
+    "topic": "1.5-unique",
+    "front": "State the key facts: Exactly one: existence and uniqueness",
+    "back": "Exactly one combines existence with the requirement that every other candidate equals the witness. For P: ∃x(P(x)∧∀z(P(z)→z=x)).",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-unique-recall",
+    "topic": "1.5-unique",
+    "front": "What two ingredients does exactly one require?",
+    "back": "Existence, then uniqueness of the witness.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-negating-definition",
+    "topic": "1.5-negating",
+    "front": "State the key facts: Negating nested statements",
+    "back": "Push negation inward one quantifier at a time, preserving their order while flipping each. Then negate the predicate or connective.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-negating-recall",
+    "topic": "1.5-negating",
+    "front": "Negate ∀x∃y∀zP(x,y,z).",
+    "back": "∃x∀y∃z¬P(x,y,z).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.5-practice-definition",
+    "topic": "1.5-practice",
+    "front": "State the key facts: Class practice sheet",
+    "back": "The sheet combines dependent witnesses, changing domains, and uniqueness. Its limit question was crossed out and is omitted.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.5-practice-recall",
+    "topic": "1.5-practice",
+    "front": "Does “none of a student’s friends are friends with each other” assert that the student has friends?",
+    "back": "No. It can hold vacuously.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-argument-definition",
+    "topic": "1.6-argument",
+    "front": "State the key facts: Argument, premises, conclusion",
+    "back": "An argument is a sequence of propositions called premises, followed by a conclusion. An argument form replaces particular statements by propositional variables.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-argument-recall",
+    "topic": "1.6-argument",
+    "front": "What is an argument form?",
+    "back": "A pattern obtained by replacing statements with propositional variables.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-validity-definition",
+    "topic": "1.6-validity",
+    "front": "State the key facts: Validity is about the form",
+    "back": "An argument is valid if the truth of all premises implies the truth of the conclusion. Equivalently, (p₁∧…∧pₙ)→q is a tautology. It may have false premises.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-validity-recall",
+    "topic": "1.6-validity",
+    "front": "How can a valid argument have a false conclusion?",
+    "back": "At least one premise must be false.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-tables-definition",
+    "topic": "1.6-tables",
+    "front": "State the key facts: Step / Reason tables",
+    "back": "Write each premise or derived statement as a numbered step, with a reason referencing earlier steps. End with ∎.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-tables-recall",
+    "topic": "1.6-tables",
+    "front": "What goes in the Reason column for a given hypothesis?",
+    "back": "prem. (premise).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-equivalence-steps-definition",
+    "topic": "1.6-equivalence-steps",
+    "front": "State the key facts: Equivalences inside arguments",
+    "back": "Logical equivalences go both ways; rules of inference go one way. An allowed equivalence may replace a statement inside a derivation.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-equivalence-steps-recall",
+    "topic": "1.6-equivalence-steps",
+    "front": "May you use contraposition as an argument step?",
+    "back": "Yes, as an allowed logical equivalence, with a reference to the original step.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-invalid-definition",
+    "topic": "1.6-invalid",
+    "front": "State the key facts: Showing invalidity",
+    "back": "An argument form is invalid when some truth assignment makes every premise true and the conclusion false. One such row suffices.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-invalid-recall",
+    "topic": "1.6-invalid",
+    "front": "Which truth pattern disproves validity?",
+    "back": "All premises true, conclusion false.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-fallacies-definition",
+    "topic": "1.6-fallacies",
+    "front": "State the key facts: Two fallacies",
+    "back": "Affirming the conclusion: p→q, q, ∴p. Denying the hypothesis: p→q, ¬p, ∴¬q. Both are invalid.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-fallacies-recall",
+    "topic": "1.6-fallacies",
+    "front": "Name p→q, ¬p, ∴¬q.",
+    "back": "Denying the hypothesis; invalid.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-rule-tautology-definition",
+    "topic": "1.6-rule-tautology",
+    "front": "State the key facts: Proving an inference rule",
+    "back": "To verify a rule, make the conjunction of its premises imply its conclusion and show the result is a tautology.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-rule-tautology-recall",
+    "topic": "1.6-rule-tautology",
+    "front": "What proposition tests p→q,p,∴q?",
+    "back": "[(p→q)∧p]→q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-mp-definition",
+    "topic": "1.6-mp",
+    "front": "State the key facts: Modus ponens",
+    "back": "p→q; p ∴ q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-mp-recall",
+    "topic": "1.6-mp",
+    "front": "Which rule is p→q; p ∴ q?",
+    "back": "Modus ponens.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-mt-definition",
+    "topic": "1.6-mt",
+    "front": "State the key facts: Modus tollens",
+    "back": "p→q; ¬q ∴ ¬p. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-mt-recall",
+    "topic": "1.6-mt",
+    "front": "Which rule is p→q; ¬q ∴ ¬p?",
+    "back": "Modus tollens.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-hs-definition",
+    "topic": "1.6-hs",
+    "front": "State the key facts: Hypothetical syllogism",
+    "back": "p→q; q→r ∴ p→r. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-hs-recall",
+    "topic": "1.6-hs",
+    "front": "Which rule is p→q; q→r ∴ p→r?",
+    "back": "Hypothetical syllogism.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-ds-definition",
+    "topic": "1.6-ds",
+    "front": "State the key facts: Disjunctive syllogism",
+    "back": "p∨q; ¬p ∴ q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-ds-recall",
+    "topic": "1.6-ds",
+    "front": "Which rule is p∨q; ¬p ∴ q?",
+    "back": "Disjunctive syllogism.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-add-definition",
+    "topic": "1.6-add",
+    "front": "State the key facts: Addition",
+    "back": "p ∴ p∨q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-add-recall",
+    "topic": "1.6-add",
+    "front": "Which rule is p ∴ p∨q?",
+    "back": "Addition.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-simp-definition",
+    "topic": "1.6-simp",
+    "front": "State the key facts: Simplification",
+    "back": "p∧q ∴ p. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-simp-recall",
+    "topic": "1.6-simp",
+    "front": "Which rule is p∧q ∴ p?",
+    "back": "Simplification.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-conj-definition",
+    "topic": "1.6-conj",
+    "front": "State the key facts: Conjunction",
+    "back": "p; q ∴ p∧q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-conj-recall",
+    "topic": "1.6-conj",
+    "front": "Which rule is p; q ∴ p∧q?",
+    "back": "Conjunction.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.6-res-definition",
+    "topic": "1.6-res",
+    "front": "State the key facts: Resolution",
+    "back": "p∨q; ¬p∨r ∴ q∨r. This inference preserves truth: whenever all listed premises are true, the conclusion is true.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.6-res-recall",
+    "topic": "1.6-res",
+    "front": "Which rule is p∨q; ¬p∨r ∴ q∨r?",
+    "back": "Resolution.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-vocabulary-definition",
+    "topic": "1.7-vocabulary",
+    "front": "State the key facts: Vocabulary of proofs",
+    "back": "A theorem is a fact that can be proven true (main fact). A proposition is a theorem of lesser prominence (supporting details). An axiom is assumed without proof; a proof establishes truth by valid reasoning.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocabulary-recall",
+    "topic": "1.7-vocabulary",
+    "front": "What is a lemma?",
+    "back": "A theorem used to prove another result.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-direct-definition",
+    "topic": "1.7-direct",
+    "front": "State the key facts: Direct proof",
+    "back": "To prove p→q directly, suppose p is true and use definitions and algebra to establish q.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-direct-recall",
+    "topic": "1.7-direct",
+    "front": "What is the opening of a direct proof of p→q?",
+    "back": "Pf Suppose p. Then use definitions and established facts to derive q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-even-definition",
+    "topic": "1.7-even",
+    "front": "State the key facts: Even integers",
+    "back": "An integer n is even if there exists some integer k so that n=2k.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-even-recall",
+    "topic": "1.7-even",
+    "front": "What must the witness k satisfy in n=2k?",
+    "back": "k∈ℤ.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-odd-definition",
+    "topic": "1.7-odd",
+    "front": "State the key facts: Odd integers and odd squares",
+    "back": "An integer n is odd if there exists some integer k so that n=2k+1. Every integer is either even or odd.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-odd-recall",
+    "topic": "1.7-odd",
+    "front": "Complete (2k+1)²=2(___)+1.",
+    "back": "2k²+2k.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-square-definition",
+    "topic": "1.7-square",
+    "front": "State the key facts: Perfect squares",
+    "back": "An integer n is a perfect square if there exists an integer k so that n=k².",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-square-recall",
+    "topic": "1.7-square",
+    "front": "Why is the product of two squares a square?",
+    "back": "k²j²=(kj)² with kj∈ℤ.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-rational-definition",
+    "topic": "1.7-rational",
+    "front": "State the key facts: Rational and irrational",
+    "back": "A real number x is rational if x=p/q for integers p,q with q≠0. An irrational real is not rational.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-rational-recall",
+    "topic": "1.7-rational",
+    "front": "What denominator restriction defines rationality?",
+    "back": "The integer denominator is nonzero.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-contraposition-definition",
+    "topic": "1.7-contraposition",
+    "front": "State the key facts: Contraposition: 3n+2",
+    "back": "To prove p→q, first state C.P.: If ¬q then ¬p. Then prove that implication directly.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-contraposition-recall",
+    "topic": "1.7-contraposition",
+    "front": "How does a contraposition proof begin?",
+    "back": "C.P.: If ¬q then ¬p. Pf We will prove the contrapositive. Suppose ¬q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-factor-bound-definition",
+    "topic": "1.7-factor-bound",
+    "front": "State the key facts: At least one small factor",
+    "back": "If n=ab with positive integers a,b, then a≤√n or b≤√n. The conclusion is an inclusive or.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-factor-bound-recall",
+    "topic": "1.7-factor-bound",
+    "front": "Negate a≤√n or b≤√n.",
+    "back": "a>√n and b>√n.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-contradiction-definition",
+    "topic": "1.7-contradiction",
+    "front": "State the key facts: Contradiction of a proposition",
+    "back": "To prove p, assume ¬p and derive a contradiction r∧¬r. Name the contradiction at the end.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-contradiction-recall",
+    "topic": "1.7-contradiction",
+    "front": "What do you assume to prove p by contradiction?",
+    "back": "¬p.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-sqrt2-definition",
+    "topic": "1.7-sqrt2",
+    "front": "State the key facts: Canonical proof: √2 irrational",
+    "back": "Use a reduced fraction, then show both numerator and denominator are even. The parity lemma follows by contraposing the odd-square proof.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-sqrt2-recall",
+    "topic": "1.7-sqrt2",
+    "front": "What is the contradiction in the √2 proof?",
+    "back": "The fraction was reduced, but p and q are both even and share factor 2.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-implication-contradiction-definition",
+    "topic": "1.7-implication-contradiction",
+    "front": "State the key facts: Contradiction of an implication",
+    "back": "To prove p→q by contradiction, assume both p and ¬q. This is the negation of the whole implication.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-implication-contradiction-recall",
+    "topic": "1.7-implication-contradiction",
+    "front": "Negate p→q before a contradiction proof.",
+    "back": "p∧¬q.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-irrational-sum-definition",
+    "topic": "1.7-irrational-sum",
+    "front": "State the key facts: Canonical proof: irrational plus rational",
+    "back": "The sum of an irrational and a rational is irrational.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-irrational-sum-recall",
+    "topic": "1.7-irrational-sum",
+    "front": "Must a sum of two irrationals be irrational?",
+    "back": "No. √2+(−√2)=0.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-biconditional-definition",
+    "topic": "1.7-biconditional",
+    "front": "State the key facts: Proving biconditionals",
+    "back": "To prove p↔q, prove both p→q and q→p, labeled (→) and (←). Different methods may be used for the directions.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-biconditional-recall",
+    "topic": "1.7-biconditional",
+    "front": "How many directions must an iff proof establish?",
+    "back": "Both (→) and (←).",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-tfae-definition",
+    "topic": "1.7-tfae",
+    "front": "State the key facts: TFAE cycle",
+    "back": "To show several statements are equivalent, prove a cycle p₁→p₂→p₃→p₁. Transitivity then supplies every remaining direction.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-tfae-recall",
+    "topic": "1.7-tfae",
+    "front": "Which three arrows suffice for a,b,c TFAE?",
+    "back": "a→b, b→c, c→a.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-cuberoot2-definition",
+    "topic": "1.7-cuberoot2",
+    "front": "State the key facts: Canonical proof: ∛2 irrational",
+    "back": "First prove the lemma n³ even ⇒ n even by contraposition; then repeat the reduced-fraction contradiction.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-cuberoot2-recall",
+    "topic": "1.7-cuberoot2",
+    "front": "What lemma is needed for the ∛2 proof?",
+    "back": "n³ even ⇒ n even; contrapose and expand (2k+1)³.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-sets-definition",
+    "topic": "2.1-sets",
+    "front": "State the key facts: Sets and elements",
+    "back": "A set is an unordered collection of distinct objects which we call elements. x∈A means x is an element; x∉A means it is not.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-sets-recall",
+    "topic": "2.1-sets",
+    "front": "Do duplicates change a set?",
+    "back": "No; its elements are distinct.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-notation-definition",
+    "topic": "2.1-notation",
+    "front": "State the key facts: Roster, set-builder, intervals",
+    "back": "Roster notation lists elements. Set-builder notation describes exactly which objects qualify. Interval notation describes real numbers between endpoints.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-notation-recall",
+    "topic": "2.1-notation",
+    "front": "Which endpoints are included in (a,b]?",
+    "back": "b is included; a is excluded.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-standard-definition",
+    "topic": "2.1-standard",
+    "front": "State the key facts: Standard number sets",
+    "back": "ℕ={0,1,2,…}, ℤ={…,−1,0,1,…}, ℤ⁺={1,2,…}; ℚ rational, ℚ⁺ positive rational, ℝ real, ℝ⁺ positive real, ℂ complex. ℕ includes 0 in this class.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-standard-recall",
+    "topic": "2.1-standard",
+    "front": "Is ℕ=ℤ⁺ in this class?",
+    "back": "No; 0∈ℕ but 0∉ℤ⁺.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-empty-definition",
+    "topic": "2.1-empty",
+    "front": "State the key facts: Empty set and singleton",
+    "back": "The empty set ∅={} is the only set with no elements. A singleton has exactly one element.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-empty-recall",
+    "topic": "2.1-empty",
+    "front": "What is a singleton?",
+    "back": "A set containing exactly one element.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-equality-definition",
+    "topic": "2.1-equality",
+    "front": "State the key facts: Set equality",
+    "back": "A=B iff every element of A is in B and every element of B is in A; equivalently A⊆B and B⊆A.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-equality-recall",
+    "topic": "2.1-equality",
+    "front": "Does |A|=|B| imply A=B?",
+    "back": "No: {1} and {2} both have one element but differ.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-universal-definition",
+    "topic": "2.1-universal",
+    "front": "State the key facts: Universal set",
+    "back": "The universal set U contains all objects currently under consideration. It depends on the problem context.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-universal-recall",
+    "topic": "2.1-universal",
+    "front": "Is U always ℝ?",
+    "back": "No; it is the set of objects under consideration.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-subset-definition",
+    "topic": "2.1-subset",
+    "front": "State the key facts: Subset, superset, subset proofs",
+    "back": "A⊆B means ∀x(x∈A→x∈B). B⊇A says the same thing. To prove A⊆B, choose arbitrary x∈A and show x∈B.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-subset-recall",
+    "topic": "2.1-subset",
+    "front": "How do you disprove A⊆B?",
+    "back": "Find x∈A with x∉B.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-proper-definition",
+    "topic": "2.1-proper",
+    "front": "State the key facts: Proper subsets and supersets",
+    "back": "A⊂B (also A⊊B) means A⊆B and A≠B. Equivalently every element of A lies in B and some element of B lies outside A. B is a proper superset of A.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-proper-recall",
+    "topic": "2.1-proper",
+    "front": "What extra condition turns ⊆ into ⊂?",
+    "back": "A≠B; B has an element outside A.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-empty-subset-definition",
+    "topic": "2.1-empty-subset",
+    "front": "State the key facts: ∅⊆A and A⊆A",
+    "back": "For every set A, ∅⊆A and A⊆A. The first uses a vacuously true implication; the second uses reflexivity.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-empty-subset-recall",
+    "topic": "2.1-empty-subset",
+    "front": "Why is ∅⊆A always true?",
+    "back": "There are no elements of ∅ that could violate the inclusion.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-cardinality-definition",
+    "topic": "2.1-cardinality",
+    "front": "State the key facts: Finite sets and cardinality",
+    "back": "A finite set has n distinct elements for some nonnegative integer n; its cardinality is |S|=n. A set that is not finite is infinite.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-cardinality-recall",
+    "topic": "2.1-cardinality",
+    "front": "What is |{{1}}|?",
+    "back": "1. Its only element is {1}.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-power-definition",
+    "topic": "2.1-power",
+    "front": "State the key facts: Power sets and 2ⁿ",
+    "back": "P(S) is the set of all subsets of S. If |S|=n then |P(S)|=2ⁿ: each element has two independent choices, included or omitted.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-power-recall",
+    "topic": "2.1-power",
+    "front": "What is P({∅})?",
+    "back": "{∅,{∅}}, with two elements.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-2.1-nested-definition",
+    "topic": "2.1-nested",
+    "front": "State the key facts: Nested sets",
+    "back": "An inner set is one element when it appears inside outer braces. Membership removes one brace level; subset compares elements without removing a level.",
+    "tags": [
+      "definition",
+      "class"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-2.1-nested-recall",
+    "topic": "2.1-nested",
+    "front": "Is {1}⊆{{1}}?",
+    "back": "No, since 1 is not an element of {{1}}.",
+    "tags": [
+      "recall"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-vocab-theorem",
+    "topic": "1.7-vocabulary",
+    "front": "Define theorem.",
+    "back": "A fact that can be proven true; the main fact.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-proposition",
+    "topic": "1.7-vocabulary",
+    "front": "Define proposition.",
+    "back": "A theorem of lesser prominence; supporting details.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-axiom",
+    "topic": "1.7-vocabulary",
+    "front": "Define axiom.",
+    "back": "A statement assumed true without proof.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-proof",
+    "topic": "1.7-vocabulary",
+    "front": "Define proof.",
+    "back": "A valid argument establishing the truth of a theorem.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-lemma",
+    "topic": "1.7-vocabulary",
+    "front": "Define lemma.",
+    "back": "A theorem used to prove another result.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-corollary",
+    "topic": "1.7-vocabulary",
+    "front": "Define corollary.",
+    "back": "A theorem that follows directly from a theorem just proved.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-vocab-conjecture",
+    "topic": "1.7-vocabulary",
+    "front": "Define conjecture.",
+    "back": "A statement proposed to be true but not yet proven.",
+    "tags": [
+      "definition"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-207",
+    "topic": "1.1-conditional",
+    "front": "Translate: if p, then q",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-208",
+    "topic": "1.1-conditional",
+    "front": "Translate: p is sufficient for q",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-209",
+    "topic": "1.1-conditional",
+    "front": "Translate: q if p",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-210",
+    "topic": "1.1-conditional",
+    "front": "Translate: q when p",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-211",
+    "topic": "1.1-conditional",
+    "front": "Translate: a necessary condition for p is q",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-212",
+    "topic": "1.1-conditional",
+    "front": "Translate: q unless ¬p",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.1-english-213",
+    "topic": "1.1-conditional",
+    "front": "Translate: p only if q",
+    "back": "p → q",
+    "tags": [
+      "translation"
+    ],
+    "priority": 1
   }
 ]

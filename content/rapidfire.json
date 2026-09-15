@@ -1,3 +1,44 @@
 {
-  "categories": []
+  "categories": [
+    {
+      "id": "truth",
+      "generator": "truth"
+    },
+    {
+      "id": "law",
+      "generator": "law"
+    },
+    {
+      "id": "rule",
+      "generator": "rule"
+    },
+    {
+      "id": "validity",
+      "generator": "validity"
+    },
+    {
+      "id": "converse",
+      "generator": "converse"
+    },
+    {
+      "id": "negate",
+      "generator": "negate"
+    },
+    {
+      "id": "quantifier",
+      "generator": "quantifier"
+    },
+    {
+      "id": "sets",
+      "generator": "sets"
+    },
+    {
+      "id": "english",
+      "generator": "english"
+    },
+    {
+      "id": "definition",
+      "generator": "definition"
+    }
+  ]
 }

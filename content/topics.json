@@ -2,197 +2,596 @@
   {
     "id": "1.1-propositions",
     "section": "1.1",
-    "title": "propositions",
+    "title": "Propositions",
     "order": 0,
-    "notes": "A declarative statement of fact with a truth value — either true or false, never both."
+    "notes": "## Definition and key facts\nA proposition is a declarative statement of fact with a truth value — either true or false, never both. A false statement is still a proposition.\n\n## Worked example\n“5 is prime” is true; “8 is prime” is false. “3+x=5” has a free variable and is not yet a proposition; with x=1 it is a false proposition.\n\n## Common mistake\nCommands and questions do not assert a truth value.\n\n## How it shows up on the test\nDecide which sentences are propositions and justify truth values."
   },
   {
     "id": "1.1-negation",
     "section": "1.1",
-    "title": "negation",
+    "title": "Negation",
     "order": 1,
-    "notes": "It is not the case that p. Negation has the opposite truth value to p."
+    "notes": "## Definition and key facts\n¬p means “It is not the case that p” and reverses its truth value. Negate an inequality by including equality in the complement when needed.\n\n## Worked example\n¬(x<3) means x≥3; ¬(x>3) means x≤3; ¬(x≤3) means x>3; ¬(x≥3) means x<3.\n\n## Common mistake\n“Not younger” includes the same age.\n\n## How it shows up on the test\nGive a useful English negation without an ambiguous “not.”"
   },
   {
     "id": "1.1-conjunction",
     "section": "1.1",
-    "title": "conjunction",
+    "title": "Conjunction",
     "order": 2,
-    "notes": "Both p and q must be true; false otherwise."
+    "notes": "## Definition and key facts\np∧q is the proposition of both p and q. Both must be true, false otherwise.\n\n## Worked example\nFor TT, TF, FT, FF the column is T,F,F,F. “p but q” also means p∧q; “but” adds no new truth condition.\n\n## Common mistake\nDo not treat “but” as exclusive or.\n\n## How it shows up on the test\nTranslate statements joined by and, but, or nevertheless."
   },
   {
     "id": "1.1-disjunction",
     "section": "1.1",
-    "title": "disjunction",
+    "title": "Disjunction",
     "order": 3,
-    "notes": "At least one is true, including when both are true. Or is inclusive by default."
+    "notes": "## Definition and key facts\np∨q is true if at least one operand is true. Or is inclusive by default: one or the other or both.\n\n## Worked example\nFor TT, TF, FT, FF the column is T,T,T,F. A prerequisite “Calc 2 or Comp 110” allows someone who has taken both.\n\n## Common mistake\nInclusive or is true when both inputs are true.\n\n## How it shows up on the test\nDistinguish conjunction from inclusive disjunction."
   },
   {
     "id": "1.1-xor",
     "section": "1.1",
-    "title": "xor",
+    "title": "Inclusive and exclusive or",
     "order": 4,
-    "notes": "Exactly one proposition is true, not both."
+    "notes": "## Definition and key facts\np⊕q is exclusive or: exactly one proposition is true, not both. In class, “either … or” is a cue to examine exclusivity; explicit “or both” overrides it.\n\n## Worked example\nFor TT, TF, FT, FF, XOR is F,T,T,F. Spending all savings on a trip or a car is exclusive in the class example.\n\n## Common mistake\nContext matters; ordinary prose sometimes uses “either” inclusively.\n\n## How it shows up on the test\nExplain why a given everyday or permits or excludes both."
   },
   {
     "id": "1.1-conditional",
     "section": "1.1",
-    "title": "conditional",
+    "title": "Conditional and English forms",
     "order": 5,
-    "notes": "Only when p is true and q is false: the condition is met but the result does not follow."
+    "notes": "## Definition and key facts\np→q is false only if p is true and q is false. p is the condition and q its result. “p only if q,” “q is necessary for p,” “p is sufficient for q,” “q whenever p,” and “q unless ¬p” all express p→q.\n\n## Worked example\n“I run whenever it is sunny”: let p=it is sunny, q=I run. Then p→q. The false case is sunny without running. For TT,TF,FT,FF: T,F,T,T.\n\n## Common mistake\nOnly if points toward the necessary condition. A false hypothesis makes the implication true.\n\n## How it shows up on the test\nTranslate a long hypothesis as one grouped conjunction, then identify its conclusion."
   },
   {
     "id": "1.1-biconditional",
     "section": "1.1",
-    "title": "biconditional",
+    "title": "Biconditional",
     "order": 6,
-    "notes": "When p and q have the same truth value."
+    "notes": "## Definition and key facts\np↔q means p if and only if q: (p→q)∧(q→p). It is true exactly when the inputs agree.\n\n## Worked example\n“You can fly iff you bought a ticket” is true when both happen or neither happens, and false when only one happens. TT,TF,FT,FF: T,F,F,T.\n\n## Common mistake\nOne implication does not prove a biconditional.\n\n## How it shows up on the test\nTranslate necessary and sufficient; check both directions."
   },
   {
     "id": "1.1-converse",
     "section": "1.1",
-    "title": "converse",
+    "title": "Converse",
     "order": 7,
-    "notes": "q → p."
+    "notes": "## Definition and key facts\nThe converse of p→q is q→p. It reverses hypothesis and conclusion.\n\n## Worked example\nOriginal: if sunny, then I run. Converse: if I run, then sunny. With p=F,q=T, the original is true and the converse false.\n\n## Common mistake\nThe converse is not generally equivalent to the original.\n\n## How it shows up on the test\nWrite the converse of a compound English implication."
   },
   {
     "id": "1.1-inverse",
     "section": "1.1",
-    "title": "inverse",
+    "title": "Inverse",
     "order": 8,
-    "notes": "¬p → ¬q."
+    "notes": "## Definition and key facts\nThe inverse of p→q is ¬p→¬q. It negates both parts without swapping them.\n\n## Worked example\nIf it is not sunny, then I do not run. The inverse and converse are contrapositives of one another and hence equivalent.\n\n## Common mistake\nNegate a compound hypothesis with De Morgan, not one word at a time.\n\n## How it shows up on the test\nNegate an and-hypothesis to an or-hypothesis."
   },
   {
     "id": "1.1-contrapositive",
     "section": "1.1",
-    "title": "contrapositive",
+    "title": "Contrapositive",
     "order": 9,
-    "notes": "¬q → ¬p. This is equivalent to the original implication."
+    "notes": "## Definition and key facts\nThe contrapositive of p→q is ¬q→¬p. It is the only one of converse, inverse, and contrapositive always equivalent to the original.\n\n## Worked example\nIf I do not run, then it is not sunny. Both original and contrapositive fail precisely at p=T,q=F.\n\n## Common mistake\nSwap AND negate; doing only one operation gives the wrong statement.\n\n## How it shows up on the test\nTranslate contrapositives and use this allowed equivalence in arguments."
   },
   {
-    "id": "1.3-allowed",
-    "section": "1.3",
-    "title": "allowed",
+    "id": "1.1-truth-tables",
+    "section": "1.1",
+    "title": "Compound truth tables",
     "order": 10,
-    "notes": "Only p → q ≡ ¬p ∨ q; p → q ≡ ¬q → ¬p; p ↔ q ≡ (p → q) ∧ (q → p). All of Table 6 is allowed. Other Table 7/8 identities must be derived."
+    "notes": "## Definition and key facts\nA truth table lists every assignment to its propositional variables. With n distinct variables it has 2ⁿ rows. Compute inner subexpressions before the outer connective.\n\n## Worked example\nFor (p∨¬q)→(p∧q), use columns p,q,¬q,p∨¬q,p∧q,whole. In TT,TF,FT,FF order the result is T,F,T,F.\n\n## Common mistake\nRepeated occurrences of p do not add variables.\n\n## How it shows up on the test\nBuild enough intermediate columns to make each row checkable."
   },
   {
-    "id": "1.3-demorgan",
-    "section": "1.3",
-    "title": "demorgan",
-    "order": 12,
-    "notes": "¬(p ∨ q) ≡ ¬p ∧ ¬q."
+    "id": "1.1-precedence",
+    "section": "1.1",
+    "title": "Operator precedence",
+    "order": 11,
+    "notes": "## Definition and key facts\nParentheses first; then ¬, ∧, ∨, →, ↔ in decreasing binding strength. Use parentheses when mixing XOR or chaining implications to avoid ambiguity.\n\n## Worked example\n¬p∨q∧r means (¬p)∨(q∧r). p∨q→r means (p∨q)→r.\n\n## Common mistake\nNegation acts only on the next formula unless parentheses enlarge its scope.\n\n## How it shows up on the test\nParse a compound statement before building its truth table."
   },
   {
     "id": "1.3-tautology",
     "section": "1.3",
-    "title": "tautology",
+    "title": "Tautology, contradiction, contingency",
+    "order": 12,
+    "notes": "## Definition and key facts\nA tautology is always true; a contradiction is always false; a contingency is true on some assignments and false on others.\n\n## Worked example\np∨¬p is a tautology; p∧¬p is a contradiction; p→q is contingent because TF makes it false but TT makes it true.\n\n## Common mistake\nOne true row does not establish a tautology.\n\n## How it shows up on the test\nClassify a compound statement using its full final column."
+  },
+  {
+    "id": "1.3-equivalence",
+    "section": "1.3",
+    "title": "Logical equivalence",
     "order": 13,
-    "notes": "A compound proposition that is always true, no matter the truth values of its individual propositions."
+    "notes": "## Definition and key facts\np≡q means p↔q is a tautology. Prove this with matching truth-table columns or a chain of already-known equivalences.\n\n## Worked example\np→q and ¬p∨q have the same T,F,T,T column. One mismatched row disproves an alleged equivalence.\n\n## Common mistake\nA rule of inference is one-way; equivalence is two-way.\n\n## How it shows up on the test\nChoose a counterexample row quickly when equivalence fails."
+  },
+  {
+    "id": "1.3-allowed",
+    "section": "1.3",
+    "title": "The only citable Table 7/8 identities",
+    "order": 14,
+    "notes": "## Definition and key facts\nAll Table 6 identities are allowed. From Tables 7/8 ONLY: p→q≡¬p∨q (7.1); p→q≡¬q→¬p (contrapositive); p↔q≡(p→q)∧(q→p) (biconditional). Other identities must be derived.\n\n## Worked example\nTo obtain ¬(p→q)≡p∧¬q: use 7.1, then DM, then DN. Do not cite this as an additional memorized Table 7 identity.\n\n## Common mistake\nA true identity may still be disallowed as a citation.\n\n## How it shows up on the test\nLabel each substitution with an allowed law."
+  },
+  {
+    "id": "1.3-successive-substitution",
+    "section": "1.3",
+    "title": "Successive substitution",
+    "order": 15,
+    "notes": "## Definition and key facts\nWrite one equivalent expression per line, give the law that justifies the change, and end with ∎. Each substitution may replace a subexpression by an equivalent one.\n\n## Worked example\n¬(p→q) ≡ ¬(¬p∨q) [7.1]\n≡ ¬¬p∧¬q [DM]\n≡ p∧¬q [DN] ∎\n\n## Common mistake\nDo not replace implication with conjunction without negating the whole implication.\n\n## How it shows up on the test\nProve an equivalence without a truth table."
+  },
+  {
+    "id": "1.3-tautology-proofs",
+    "section": "1.3",
+    "title": "Tautologies by equivalences",
+    "order": 16,
+    "notes": "## Definition and key facts\nTo prove a tautology by equivalences, reduce the expression to T using only allowed laws.\n\n## Worked example\n(p∧q)→(p∨q) ≡ ¬(p∧q)∨(p∨q) [7.1]\n≡ (¬p∨¬q)∨(p∨q) [DM]\n≡ (p∨¬p)∨(q∨¬q) [comm, assoc]\n≡ T∨T [negation]\n≡ T [domination] ∎\n\n## Common mistake\nA chain must finish at T, not merely at a simpler contingent expression.\n\n## How it shows up on the test\nRecognize complementary terms after expanding conditionals."
+  },
+  {
+    "id": "1.3-identity",
+    "section": "1.3",
+    "title": "Identity law (Table 6)",
+    "order": 17,
+    "notes": "## Definition and key facts\np ∧ T ≡ p; p ∨ F ≡ p. The neutral truth value leaves p unchanged.\n\n## Worked example\np ∧ T ≡ p [Identity]\np ∨ F ≡ p [Identity]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-dom",
+    "section": "1.3",
+    "title": "Domination law (Table 6)",
+    "order": 18,
+    "notes": "## Definition and key facts\np ∨ T ≡ T; p ∧ F ≡ F. A true disjunct or false conjunct determines the result.\n\n## Worked example\np ∨ T ≡ T [Domination]\np ∧ F ≡ F [Domination]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-idem",
+    "section": "1.3",
+    "title": "Idempotent law (Table 6)",
+    "order": 19,
+    "notes": "## Definition and key facts\np ∨ p ≡ p; p ∧ p ≡ p. Repeating a proposition adds no information.\n\n## Worked example\np ∨ p ≡ p [Idempotent]\np ∧ p ≡ p [Idempotent]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-dn",
+    "section": "1.3",
+    "title": "Double negation law (Table 6)",
+    "order": 20,
+    "notes": "## Definition and key facts\n¬¬p ≡ p. Two negations cancel.\n\n## Worked example\n¬¬p ≡ p [Double negation]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-comm",
+    "section": "1.3",
+    "title": "Commutative law (Table 6)",
+    "order": 21,
+    "notes": "## Definition and key facts\np ∨ q ≡ q ∨ p; p ∧ q ≡ q ∧ p. Swap operands of the same connective.\n\n## Worked example\np ∨ q ≡ q ∨ p [Commutative]\np ∧ q ≡ q ∧ p [Commutative]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-assoc",
+    "section": "1.3",
+    "title": "Associative law (Table 6)",
+    "order": 22,
+    "notes": "## Definition and key facts\np ∨ (q ∨ r) ≡ (p ∨ q) ∨ r; p ∧ (q ∧ r) ≡ (p ∧ q) ∧ r. Regroup all ands or all ors.\n\n## Worked example\np ∨ (q ∨ r) ≡ (p ∨ q) ∨ r [Associative]\np ∧ (q ∧ r) ≡ (p ∧ q) ∧ r [Associative]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-dist",
+    "section": "1.3",
+    "title": "Distributive law (Table 6)",
+    "order": 23,
+    "notes": "## Definition and key facts\np ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r); p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r). Think of ands with ors; both distributive patterns are valid.\n\n## Worked example\np ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r) [Distributive]\np ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r) [Distributive]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-demorgan",
+    "section": "1.3",
+    "title": "De Morgan law (Table 6)",
+    "order": 24,
+    "notes": "## Definition and key facts\n¬(p ∧ q) ≡ ¬p ∨ ¬q; ¬(p ∨ q) ≡ ¬p ∧ ¬q. Negate each piece and flip the connective.\n\n## Worked example\n¬(p ∧ q) ≡ ¬p ∨ ¬q [De Morgan]\n¬(p ∨ q) ≡ ¬p ∧ ¬q [De Morgan]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-abs",
+    "section": "1.3",
+    "title": "Absorption law (Table 6)",
+    "order": 25,
+    "notes": "## Definition and key facts\np ∨ (p ∧ q) ≡ p; p ∧ (p ∨ q) ≡ p. The standalone p absorbs the more complicated term.\n\n## Worked example\np ∨ (p ∧ q) ≡ p [Absorption]\np ∧ (p ∨ q) ≡ p [Absorption]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.3-neg",
+    "section": "1.3",
+    "title": "Negation law law (Table 6)",
+    "order": 26,
+    "notes": "## Definition and key facts\np ∨ ¬p ≡ T; p ∧ ¬p ≡ F. A proposition and its negation exhaust the possibilities.\n\n## Worked example\np ∨ ¬p ≡ T [Negation law]\np ∧ ¬p ≡ F [Negation law]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
+  },
+  {
+    "id": "1.4-predicates",
+    "section": "1.4",
+    "title": "Predicates and propositional functions",
+    "order": 27,
+    "notes": "## Definition and key facts\nThe predicate is the property or relationship part of a sentence; the subject is what it is about. A propositional function P(x) depends on an input that can change.\n\n## Worked example\nFor x>3, x is the subject and “is greater than 3” the predicate. P(4) is true. Q(x,y):x+y=3 gives Q(3,0)=T and Q(3,2)=F.\n\n## Common mistake\nInput order matters for x>y, even though it does not for x+y=3.\n\n## How it shows up on the test\nEvaluate a predicate after substituting all inputs."
+  },
+  {
+    "id": "1.4-domains",
+    "section": "1.4",
+    "title": "Domains",
+    "order": 28,
+    "notes": "## Definition and key facts\nThe domain is the allowed set of inputs. Stipulations on the subject are part of the meaning of a quantified statement.\n\n## Worked example\n∀x(x²≥x) is false over ℝ since x=1/2 fails, but true over ℤ: n≤0 or n≥1, so n(n−1)≥0.\n\n## Common mistake\nNever silently change ℝ into ℤ. ℕ includes 0.\n\n## How it shows up on the test\nCompare truth over ℝ, ℤ, ℕ, and ℤ⁺."
   },
   {
     "id": "1.4-universal",
     "section": "1.4",
-    "title": "universal",
-    "order": 14,
-    "notes": "For every x in the domain, P(x) is true."
+    "title": "Universal quantification",
+    "order": 29,
+    "notes": "## Definition and key facts\nThe universal quantification of P(x) says: for every x in the domain, P(x) is true. Notation ∀x∈D P(x).\n\n## Worked example\n∀x∈ℝ(x+1>x) is true because adding 1 increases every real number. One arbitrary x must suffice for a proof.\n\n## Common mistake\nChecking a few values is not proof for an infinite domain.\n\n## How it shows up on the test\nProve a universal assertion or exhibit a counterexample."
   },
   {
     "id": "1.4-existential",
     "section": "1.4",
-    "title": "existential",
-    "order": 15,
-    "notes": "There exists some (at least one) x in the domain so that P(x) is true."
+    "title": "Existential quantification",
+    "order": 30,
+    "notes": "## Definition and key facts\nThere exists some (at least one) x in the domain so that P(x) is true: ∃xP(x).\n\n## Worked example\nOver ℤ, ∃x(x>3) is true with witness 4. ∃x(x=x+1) is false because subtracting x would give 0=1.\n\n## Common mistake\nAn existential assertion does not mean exactly one.\n\n## How it shows up on the test\nSupply a witness and check that it belongs to the domain."
   },
   {
-    "id": "1.4-negating",
+    "id": "1.4-counterexamples",
     "section": "1.4",
-    "title": "negating",
-    "order": 17,
-    "notes": "∀x¬P(x)."
+    "title": "Counterexamples",
+    "order": 31,
+    "notes": "## Definition and key facts\nA counterexample to ∀xP(x) is a domain element a with P(a) false. To refute ∃xP(x), show every candidate fails.\n\n## Worked example\n∀x∈ℤ(x²>0) fails at x=0. That same example works over ℕ because 0∈ℕ.\n\n## Common mistake\nA number outside the specified domain cannot be a counterexample.\n\n## How it shows up on the test\nFind the simplest value, often 0, 1, −1, or 1/2."
+  },
+  {
+    "id": "1.4-bound-free",
+    "section": "1.4",
+    "title": "Bound and free variables",
+    "order": 32,
+    "notes": "## Definition and key facts\nA variable occurrence is bound when it falls in the scope of its matching quantifier; otherwise it is free. A statement with a free variable need not have a fixed truth value.\n\n## Worked example\nIn ∀x(P(x,y)→Q(x)), x is bound and y is free. In (∀xP(x))∨Q(x), the x in Q(x) is free.\n\n## Common mistake\nScope is controlled by parentheses, not just a variable name appearing somewhere after a quantifier.\n\n## How it shows up on the test\nIdentify free occurrences and parenthesize scope."
   },
   {
     "id": "1.4-distribution",
     "section": "1.4",
-    "title": "distribution",
-    "order": 18,
-    "notes": "No. ∀x(P(x) ∨ Q(x)) ≢ ∀xP(x) ∨ ∀xQ(x). Different x may satisfy different predicates."
+    "title": "Quantifier distribution: two laws, two failures",
+    "order": 33,
+    "notes": "## Definition and key facts\n∀x(P∧Q) ≡ ∀xP∧∀xQ; ∃x(P∨Q) ≡ ∃xP∨∃xQ. But ∀x(P∨Q) ≢ ∀xP∨∀xQ, and ∃x(P∧Q) ≢ ∃xP∧∃xQ.\n\n## Worked example\nLet D={1,2}, P(x):x=1, Q(x):x=2. Everyone satisfies P or Q, but neither holds for everyone. Each predicate has a witness, but no single element satisfies both.\n\n## Common mistake\nIn ∃x(P∧Q), it must be the same x; separate existential witnesses could be different.\n\n## How it shows up on the test\nProve the valid distributions in words and refute the others with a two-element domain."
+  },
+  {
+    "id": "1.4-negating",
+    "section": "1.4",
+    "title": "Negating quantified statements",
+    "order": 34,
+    "notes": "## Definition and key facts\n¬∀xP(x) ≡ ∃x¬P(x); ¬∃xP(x) ≡ ∀x¬P(x). Flip the quantifier, negate the inside.\n\n## Worked example\n¬∀x(x²>x) ≡ ∃x(x²≤x). ¬∃x(x²=2) ≡ ∀x(x²≠2). Negating “every student took Calc 2” gives “some student did not.”\n\n## Common mistake\n“Not every” means some do not, not none do.\n\n## How it shows up on the test\nNegate the formula, then translate back to natural English."
+  },
+  {
+    "id": "1.4-translation",
+    "section": "1.4",
+    "title": "One-quantifier translations",
+    "order": 35,
+    "notes": "## Definition and key facts\nState the domain and define each predicate first. All A are B becomes ∀x(A(x)→B(x)); some A are B becomes ∃x(A(x)∧B(x)).\n\n## Worked example\nDomain people; S(x):x is a student, H(x):x is here. “Some students are absent” is ∃x(S(x)∧¬H(x)). With domain restricted to students it is ∃x¬H(x).\n\n## Common mistake\nUsing implication under ∃ can make an unrelated nonstudent a witness.\n\n## How it shows up on the test\nTranslate in both directions and negate without leaving a leading ¬."
+  },
+  {
+    "id": "1.5-nested",
+    "section": "1.5",
+    "title": "Nested quantifiers",
+    "order": 36,
+    "notes": "## Definition and key facts\nA quantifier is nested when it falls in the scope of another. Predicates with multiple inputs allow one quantifier per variable.\n\n## Worked example\nLet P(x,y):x+y=0 over ℝ. Q(x)=∃yP(x,y) is a propositional function of x; ∀xQ(x) binds that remaining input.\n\n## Common mistake\nCount free variables after each quantifier is applied.\n\n## How it shows up on the test\nRead the sentence from the outermost quantifier inward."
   },
   {
     "id": "1.5-order",
     "section": "1.5",
-    "title": "order",
-    "order": 19,
-    "notes": "Not in general. ∀x∃y allows y to depend on x; ∃y∀x requires one y for every x."
+    "title": "Quantifier order",
+    "order": 37,
+    "notes": "## Definition and key facts\nSame-kind quantifiers commute: ∀x∀y and ∃x∃y can be swapped. Mixed quantifiers cannot generally be swapped. ∃y∀xP(x,y) implies ∀x∃yP(x,y).\n\n## Worked example\nOver ℝ, ∀x∃y(x+y=0) is true with y=−x. ∃y∀x(x+y=0) is false: x=−y+1 defeats any fixed y.\n\n## Common mistake\nA witness chosen first must work for every later universal choice.\n\n## How it shows up on the test\nJustify truth with a dependent witness or defeat every proposed fixed witness."
   },
   {
-    "id": "1.6-mp",
-    "section": "1.6",
-    "title": "mp",
-    "order": 20,
-    "notes": "p → q, p, ∴ q."
+    "id": "1.5-nests",
+    "section": "1.5",
+    "title": "Truth values of the four nests",
+    "order": 38,
+    "notes": "## Definition and key facts\nFor x+y=0 over ℝ: ∀∀ false, ∀∃ true, ∃∀ false, ∃∃ true. The justification matters as much as the letters.\n\n## Worked example\n∀∀ fails at x=y=1. ∀∃: choose y=−x. ∃∀ fails by choosing y=1−x. ∃∃: choose x=y=0. For xy=1 over ℝ, ∀∃ is false at x=0. For x<y, ∀∃ is true using y=x+1.\n\n## Common mistake\nA change to ℕ removes negative witnesses; x+y=0 then works only at (0,0).\n\n## How it shows up on the test\nEvaluate several nests over different domains."
   },
   {
-    "id": "1.6-mt",
+    "id": "1.5-translation",
+    "section": "1.5",
+    "title": "Nested translations",
+    "order": 39,
+    "notes": "## Definition and key facts\nSpecify each variable domain and predicate before translating. Universal choices come before witnesses that may depend on them.\n\n## Worked example\nDomain ℤ⁺: “sum of two positive integers is positive” is ∀x∀y(x+y>0). Domain ℤ: ∀x∀y((x>0∧y>0)→x+y>0).\n\n## Common mistake\nRestricting the domain can replace a condition inside the formula, but both forms must mean the same thing.\n\n## How it shows up on the test\nTranslate mathematical and people/course statements."
+  },
+  {
+    "id": "1.5-unique",
+    "section": "1.5",
+    "title": "Exactly one: existence and uniqueness",
+    "order": 40,
+    "notes": "## Definition and key facts\nExactly one combines existence with the requirement that every other candidate equals the witness. For P: ∃x(P(x)∧∀z(P(z)→z=x)).\n\n## Worked example\nDomain people; B(x,y):x is best friends with y. Step 1: ∀x∃yB(x,y). Step 2: ∀x∃y(B(x,y)∧∀z(B(x,z)→z=y)).\n\n## Common mistake\n∀z(B(x,z)→z=y) alone allows no friends; it needs the existence clause.\n\n## How it shows up on the test\nTranslate exactly one teacher or a unique person everybody can fool."
+  },
+  {
+    "id": "1.5-negating",
+    "section": "1.5",
+    "title": "Negating nested statements",
+    "order": 41,
+    "notes": "## Definition and key facts\nPush negation inward one quantifier at a time, preserving their order while flipping each. Then negate the predicate or connective.\n\n## Worked example\n¬∀x∃y(x+y=0) ≡ ∃x¬∃y(x+y=0) [quantifier negation]\n≡ ∃x∀y(x+y≠0) [quantifier negation] ∎\n\n## Common mistake\nDo not reverse the order of variables when flipping quantifiers.\n\n## How it shows up on the test\nProduce a useful negation with no leading ¬."
+  },
+  {
+    "id": "1.5-practice",
+    "section": "1.5",
+    "title": "Class practice sheet",
+    "order": 42,
+    "notes": "## Definition and key facts\nThe sheet combines dependent witnesses, changing domains, and uniqueness. Its limit question was crossed out and is omitted.\n\n## Worked example\n∀x∀y∃z(x+y=z) is true over ℝ: choose z=x+y. ∃z∀x∀y(x+y=z) is false: (0,0) and (1,0) demand different z. “A student none of whose distinct friends are friends” need not have any friends.\n\n## Common mistake\nDo not accidentally add existence of two friends to a universal implication about pairs of friends.\n\n## How it shows up on the test\nExpect multi-part translation and negation questions like the homework."
+  },
+  {
+    "id": "1.6-argument",
     "section": "1.6",
-    "title": "mt",
-    "order": 21,
-    "notes": "p → q, ¬q, ∴ ¬p."
+    "title": "Argument, premises, conclusion",
+    "order": 43,
+    "notes": "## Definition and key facts\nAn argument is a sequence of propositions called premises, followed by a conclusion. An argument form replaces particular statements by propositional variables.\n\n## Worked example\n“If you have the password, you can log on; you have the password; therefore you can log on” has form p→q, p, ∴q.\n\n## Common mistake\nIdentify entire propositions as atoms rather than splitting their English subject and predicate.\n\n## How it shows up on the test\nExtract premises and conclusion before starting a proof."
   },
   {
     "id": "1.6-validity",
     "section": "1.6",
-    "title": "validity",
-    "order": 22,
-    "notes": "Yes. Validity says that if all premises are true, the conclusion must be true."
+    "title": "Validity is about the form",
+    "order": 44,
+    "notes": "## Definition and key facts\nAn argument is valid if the truth of all premises implies the truth of the conclusion. Equivalently, (p₁∧…∧pₙ)→q is a tautology. It may have false premises.\n\n## Worked example\nThe class example √2>3/2 ⇒ 2>9/4; √2>3/2; therefore 2>9/4 is valid MP, but its numerical premise is false.\n\n## Common mistake\nValidity alone does not certify that the premises or conclusion are actually true.\n\n## How it shows up on the test\nSeparate the logical form from factual truth."
+  },
+  {
+    "id": "1.6-tables",
+    "section": "1.6",
+    "title": "Step / Reason tables",
+    "order": 45,
+    "notes": "## Definition and key facts\nWrite each premise or derived statement as a numbered step, with a reason referencing earlier steps. End with ∎.\n\n## Worked example\n| Step | Reason |\n| ① ¬s∧c | prem. |\n| ② ¬s | simplification of ① |\n| ③ w→s | prem. |\n| ④ ¬w | M.T. of ③,② |\n| ⑤ ¬w→n | prem. |\n| ⑥ n | M.P. of ⑤,④ |\n| ⑦ n→t | prem. |\n| ⑧ t | M.P. of ⑦,⑥ |\n∎\n\n## Common mistake\nDo not cite a conclusion before it has been established.\n\n## How it shows up on the test\nConstruct a table for a 4–6 premise argument."
+  },
+  {
+    "id": "1.6-equivalence-steps",
+    "section": "1.6",
+    "title": "Equivalences inside arguments",
+    "order": 46,
+    "notes": "## Definition and key facts\nLogical equivalences go both ways; rules of inference go one way. An allowed equivalence may replace a statement inside a derivation.\n\n## Worked example\n| Step | Reason |\n| ① e→p | prem. |\n| ② ¬e→z | prem. |\n| ③ z→r | prem. |\n| ④ ¬p→¬e | contrapositive of ① (log. equiv.) |\n| ⑤ ¬e→r | Hypo. Syl. ②,③ |\n| ⑥ ¬p→r | Hypo. Syl. ④,⑤ |\n∎\n\n## Common mistake\nA converse is not an allowed replacement for an implication.\n\n## How it shows up on the test\nUse contraposition to connect the needed antecedent to a chain."
+  },
+  {
+    "id": "1.6-invalid",
+    "section": "1.6",
+    "title": "Showing invalidity",
+    "order": 47,
+    "notes": "## Definition and key facts\nAn argument form is invalid when some truth assignment makes every premise true and the conclusion false. One such row suffices.\n\n## Worked example\n| Step | Reason |\n| ① p=F, q=T | chosen assignment |\n| ② p→q=T and q=T | evaluate premises |\n| ③ p=F | conclusion false |\n∎ Thus p→q,q,∴p is invalid.\n\n## Common mistake\nA false premise does not disprove validity.\n\n## How it shows up on the test\nGive a concrete counterexample assignment."
+  },
+  {
+    "id": "1.6-fallacies",
+    "section": "1.6",
+    "title": "Two fallacies",
+    "order": 48,
+    "notes": "## Definition and key facts\nAffirming the conclusion: p→q, q, ∴p. Denying the hypothesis: p→q, ¬p, ∴¬q. Both are invalid.\n\n## Worked example\n| Step | Reason |\n| ① p=F, q=T | counterexample for both forms |\n| ② p→q=T; q=T; ¬p=T | all relevant premises true |\n| ③ p=F; ¬q=F | the respective conclusions are false |\n∎\n\n## Common mistake\nDo not confuse affirming q with MP, or denying p with MT.\n\n## How it shows up on the test\nName the fallacy and demonstrate a counterexample."
+  },
+  {
+    "id": "1.6-rule-tautology",
+    "section": "1.6",
+    "title": "Proving an inference rule",
+    "order": 49,
+    "notes": "## Definition and key facts\nTo verify a rule, make the conjunction of its premises imply its conclusion and show the result is a tautology.\n\n## Worked example\n[(p→q)∧p]→q ≡ [(¬p∨q)∧p]→q [7.1]\n≡ [(¬p∧p)∨(q∧p)]→q [dist]\n≡ [F∨(q∧p)]→q [negation]\n≡ (q∧p)→q [identity]\n≡ ¬(q∧p)∨q [7.1]\n≡ (¬q∨¬p)∨q [DM]\n≡ (¬q∨q)∨¬p [comm, assoc]\n≡ T∨¬p [negation]\n≡ T [domination] ∎\n\n## Common mistake\nF∨X=X uses identity, correcting the ambiguous “dom.” note in the transcription.\n\n## How it shows up on the test\nProve MP or another propositional rule using allowed equivalences."
+  },
+  {
+    "id": "1.6-mp",
+    "section": "1.6",
+    "title": "Modus ponens",
+    "order": 50,
+    "notes": "## Definition and key facts\np→q; p ∴ q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p→q | prem. |\n| ② p | prem. |\n| ③ q | M.P. of ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-mt",
+    "section": "1.6",
+    "title": "Modus tollens",
+    "order": 51,
+    "notes": "## Definition and key facts\np→q; ¬q ∴ ¬p. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p→q | prem. |\n| ② ¬q | prem. |\n| ③ ¬p | M.T. of ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-hs",
+    "section": "1.6",
+    "title": "Hypothetical syllogism",
+    "order": 52,
+    "notes": "## Definition and key facts\np→q; q→r ∴ p→r. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p→q | prem. |\n| ② q→r | prem. |\n| ③ p→r | Hypo. Syl. ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-ds",
+    "section": "1.6",
+    "title": "Disjunctive syllogism",
+    "order": 53,
+    "notes": "## Definition and key facts\np∨q; ¬p ∴ q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p∨q | prem. |\n| ② ¬p | prem. |\n| ③ q | Disj. Syl. ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-add",
+    "section": "1.6",
+    "title": "Addition",
+    "order": 54,
+    "notes": "## Definition and key facts\np ∴ p∨q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p | prem. |\n| ② p∨q | Addition of ① |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-simp",
+    "section": "1.6",
+    "title": "Simplification",
+    "order": 55,
+    "notes": "## Definition and key facts\np∧q ∴ p. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p∧q | prem. |\n| ② p | simplification of ① |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-conj",
+    "section": "1.6",
+    "title": "Conjunction",
+    "order": 56,
+    "notes": "## Definition and key facts\np; q ∴ p∧q. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p | prem. |\n| ② q | prem. |\n| ③ p∧q | Conjunction of ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.6-res",
+    "section": "1.6",
+    "title": "Resolution",
+    "order": 57,
+    "notes": "## Definition and key facts\np∨q; ¬p∨r ∴ q∨r. This inference preserves truth: whenever all listed premises are true, the conclusion is true.\n\n## Worked example\n| Step | Reason |\n| ① p∨q | prem. |\n| ② ¬p∨r | prem. |\n| ③ q∨r | Resolution of ①,② |\n∎\n\n## Common mistake\nThe rule cannot be run backward; an inferred conclusion does not restore the premises.\n\n## How it shows up on the test\nRecognize this pattern with compound statements substituted for variables."
+  },
+  {
+    "id": "1.7-vocabulary",
+    "section": "1.7",
+    "title": "Vocabulary of proofs",
+    "order": 58,
+    "notes": "## Definition and key facts\nA theorem is a fact that can be proven true (main fact). A proposition is a theorem of lesser prominence (supporting details). An axiom is assumed without proof; a proof establishes truth by valid reasoning.\n\n## Worked example\nA lemma supports another proof; a corollary follows directly from a theorem; a conjecture is proposed but not proved. The odd-cube fact is a lemma in the ∛2 proof.\n\n## Common mistake\n“Proposition” here can mean a less prominent theorem, unlike its truth-valued-sentence meaning in 1.1.\n\n## How it shows up on the test\nUse precise vocabulary and justify unproved facts you rely on."
+  },
+  {
+    "id": "1.7-direct",
+    "section": "1.7",
+    "title": "Direct proof",
+    "order": 59,
+    "notes": "## Definition and key facts\nTo prove p→q directly, suppose p is true and use definitions and algebra to establish q.\n\n## Worked example\nPf Suppose n is odd. Then there exists some integer k so that n=2k+1. Now n²=4k²+4k+1=2(2k²+2k)+1. Since 2k²+2k∈ℤ, n² is odd. ∎\n\n## Common mistake\nA few numerical examples are not a proof for every integer.\n\n## How it shows up on the test\nOpen with Suppose and introduce integer witnesses explicitly."
   },
   {
     "id": "1.7-even",
     "section": "1.7",
-    "title": "even",
-    "order": 23,
-    "notes": "An integer n is even if there exists some integer k so that n = 2k."
+    "title": "Even integers",
+    "order": 60,
+    "notes": "## Definition and key facts\nAn integer n is even if there exists some integer k so that n=2k.\n\n## Worked example\nPf Suppose n=2k with k∈ℤ. Then n²=4k²=2(2k²). Since 2k²∈ℤ, n² is even. ∎\n\n## Common mistake\nThe witness must be an integer; every real number is twice another real number.\n\n## How it shows up on the test\nShow a quantity has the form 2 times an integer."
   },
   {
     "id": "1.7-odd",
     "section": "1.7",
-    "title": "odd",
-    "order": 24,
-    "notes": "An integer n is odd if there exists some integer k so that n = 2k + 1."
+    "title": "Odd integers and odd squares",
+    "order": 61,
+    "notes": "## Definition and key facts\nAn integer n is odd if there exists some integer k so that n=2k+1. Every integer is either even or odd.\n\n## Worked example\nPf Suppose n is odd. Then there exists some integer k so that n=2k+1. Now n²=2(2k²+2k)+1. Since 2k²+2k∈ℤ, n² is odd. ∎\n\n## Common mistake\nDo not write n=2k unless you are assuming evenness.\n\n## How it shows up on the test\nReproduce the class’s canonical odd-square proof."
+  },
+  {
+    "id": "1.7-square",
+    "section": "1.7",
+    "title": "Perfect squares",
+    "order": 62,
+    "notes": "## Definition and key facts\nAn integer n is a perfect square if there exists an integer k so that n=k².\n\n## Worked example\nPf Suppose m,n are perfect squares. Then there exist integers k,j with m=k² and n=j². Now mn=k²j²=(kj)². Since kj∈ℤ, mn is a perfect square. ∎\n\n## Common mistake\nUse independent witnesses k,j for independent perfect squares.\n\n## How it shows up on the test\nProve closure of perfect squares under multiplication."
   },
   {
     "id": "1.7-rational",
     "section": "1.7",
-    "title": "rational",
-    "order": 25,
-    "notes": "A real number x is rational if there exist integers p, q with q ≠ 0 so that x = p/q."
+    "title": "Rational and irrational",
+    "order": 63,
+    "notes": "## Definition and key facts\nA real number x is rational if x=p/q for integers p,q with q≠0. An irrational real is not rational.\n\n## Worked example\nPf Suppose x=p/q and y=a/b with integers p,q,a,b and q,b≠0. Then x+y=(pb+aq)/(qb). The numerator and denominator are integers and qb≠0, so x+y is rational. ∎\n\n## Common mistake\nThe denominator condition must be stated. An irrational number is still real.\n\n## How it shows up on the test\nWrite closure proofs using two separate fractions."
   },
   {
-    "id": "2.1-standard",
-    "section": "2.1",
-    "title": "standard",
-    "order": 26,
-    "notes": "Yes. ℕ = {0, 1, 2, 3, …}."
+    "id": "1.7-contraposition",
+    "section": "1.7",
+    "title": "Contraposition: 3n+2",
+    "order": 64,
+    "notes": "## Definition and key facts\nTo prove p→q, first state C.P.: If ¬q then ¬p. Then prove that implication directly.\n\n## Worked example\nC.P.: If n is even, then 3n+2 is even.\nPf We will prove the contrapositive. Suppose n is even; then there exists k∈ℤ with n=2k. Now 3n+2=2(3k+1). Since 3k+1∈ℤ, 3n+2 is even. ∎\n\n## Common mistake\nNegate both sides and swap their positions.\n\n## How it shows up on the test\nUse contraposition when the negated conclusion has a convenient definition."
+  },
+  {
+    "id": "1.7-factor-bound",
+    "section": "1.7",
+    "title": "At least one small factor",
+    "order": 65,
+    "notes": "## Definition and key facts\nIf n=ab with positive integers a,b, then a≤√n or b≤√n. The conclusion is an inclusive or.\n\n## Worked example\nC.P.: If a>√n and b>√n, then n≠ab.\nPf We will prove the contrapositive. Suppose a>√n and b>√n. Positivity gives ab>√n·√n=n, hence ab≠n. ∎\n\n## Common mistake\nThe handout’s “and” is a typo; a=1,b=9,n=9 refutes the and-version.\n\n## How it shows up on the test\nNegate an or-conclusion with De Morgan."
+  },
+  {
+    "id": "1.7-contradiction",
+    "section": "1.7",
+    "title": "Contradiction of a proposition",
+    "order": 66,
+    "notes": "## Definition and key facts\nTo prove p, assume ¬p and derive a contradiction r∧¬r. Name the contradiction at the end.\n\n## Worked example\nIn the √2 proof, r is “p/q is reduced.” Deducing both p and q even gives ¬r, because 2 is a common factor.\n\n## Common mistake\nAssuming p itself would be circular reasoning.\n\n## How it shows up on the test\nUse the exact opening: assume for the sake of contradiction."
+  },
+  {
+    "id": "1.7-sqrt2",
+    "section": "1.7",
+    "title": "Canonical proof: √2 irrational",
+    "order": 67,
+    "notes": "## Definition and key facts\nUse a reduced fraction, then show both numerator and denominator are even. The parity lemma follows by contraposing the odd-square proof.\n\n## Worked example\nPf We will prove this by contradiction. Assume for the sake of contradiction that √2 is rational. Then there exist p,q∈ℤ, q≠0, with √2=p/q. We can assume p/q is reduced so p and q share no common factors. Squaring gives 2q²=p², so p² is even. Thus p is even; let p=2k with k∈ℤ. Then 2q²=4k², hence q²=2k² is even. Thus q is even. Both p and q have factor 2, contradicting that the fraction is reduced. ∎\n\n## Common mistake\nDo not assume p even merely because p² is even without mentioning the established parity lemma.\n\n## How it shows up on the test\nReproduce this starred class proof accurately."
+  },
+  {
+    "id": "1.7-implication-contradiction",
+    "section": "1.7",
+    "title": "Contradiction of an implication",
+    "order": 68,
+    "notes": "## Definition and key facts\nTo prove p→q by contradiction, assume both p and ¬q. This is the negation of the whole implication.\n\n## Worked example\nFor irrational x and rational y, assume x+y rational. Write y=p/q, x+y=w/z with integer numerators/denominators and q,z≠0. Then x=(wq−pz)/(qz), rational — contradicting the hypothesis. ∎\n\n## Common mistake\nAssuming only ¬p or only ¬q loses necessary information.\n\n## How it shows up on the test\nUse rationality of a proposed sum to force rationality of an irrational summand."
+  },
+  {
+    "id": "1.7-irrational-sum",
+    "section": "1.7",
+    "title": "Canonical proof: irrational plus rational",
+    "order": 69,
+    "notes": "## Definition and key facts\nThe sum of an irrational and a rational is irrational.\n\n## Worked example\nPf Suppose x is irrational and y is rational. We will prove this by contradiction. Assume for the sake of contradiction that x+y is rational. There exist integers p,q,w,z with q,z≠0, y=p/q, and x+y=w/z. Then x=(wq−pz)/(qz). Since wq−pz,qz∈ℤ and qz≠0, x is rational, contradicting the hypothesis. ∎\n\n## Common mistake\nTwo irrationals need not have irrational sum: √2+(−√2)=0.\n\n## How it shows up on the test\nDistinguish the true mixed-sum theorem from false claims about two irrationals."
+  },
+  {
+    "id": "1.7-biconditional",
+    "section": "1.7",
+    "title": "Proving biconditionals",
+    "order": 70,
+    "notes": "## Definition and key facts\nTo prove p↔q, prove both p→q and q→p, labeled (→) and (←). Different methods may be used for the directions.\n\n## Worked example\nPf (→) Suppose n=2k+1. Then n²=2(2k²+2k)+1 is odd. (←) We prove the contrapositive: suppose n=2k. Then n²=2(2k²) is even. The integer witnesses justify both parity conclusions. Thus n is odd iff n² is odd. ∎\n\n## Common mistake\nRepeating the same direction in different words does not establish the converse.\n\n## How it shows up on the test\nProve an iff about parity."
+  },
+  {
+    "id": "1.7-tfae",
+    "section": "1.7",
+    "title": "TFAE cycle",
+    "order": 71,
+    "notes": "## Definition and key facts\nTo show several statements are equivalent, prove a cycle p₁→p₂→p₃→p₁. Transitivity then supplies every remaining direction.\n\n## Worked example\nPf For n∈ℤ: (a) n even → (b) n−1 odd: n=2k gives n−1=2(k−1)+1. (b)→(c) n² even: n−1=2k+1 gives n²=4(k+1)²=2[2(k+1)²]. (c)→(a): contrapose; odd n has odd square by the class proof. Each bracketed witness is an integer. ∎\n\n## Common mistake\nA chain without the final link back to the start is insufficient.\n\n## How it shows up on the test\nProve three equivalent conditions efficiently."
+  },
+  {
+    "id": "1.7-cuberoot2",
+    "section": "1.7",
+    "title": "Canonical proof: ∛2 irrational",
+    "order": 72,
+    "notes": "## Definition and key facts\nFirst prove the lemma n³ even ⇒ n even by contraposition; then repeat the reduced-fraction contradiction.\n\n## Worked example\nLemma: if n=2k+1, then n³=8k³+12k²+6k+1=2(4k³+6k²+3k)+1, odd. Pf We will prove this by contradiction. Assume for the sake of contradiction that ∛2=p/q in lowest terms, p,q∈ℤ, q≠0. Then 2q³=p³, so p³ is even and the lemma gives p=2k. Hence q³=4k³=2(2k³), even; the lemma gives q even. Both p and q have factor 2, contradicting lowest terms. ∎\n\n## Common mistake\nThe square-parity lemma alone does not justify the cube step; establish the cube lemma.\n\n## How it shows up on the test\nAdapt the √2 structure while carefully changing exponents."
   },
   {
     "id": "2.1-sets",
     "section": "2.1",
-    "title": "sets",
-    "order": 27,
-    "notes": "An unordered collection of distinct objects which we call elements."
+    "title": "Sets and elements",
+    "order": 73,
+    "notes": "## Definition and key facts\nA set is an unordered collection of distinct objects which we call elements. x∈A means x is an element; x∉A means it is not.\n\n## Worked example\n{1,3,5}={5,1,3,1}. Reordering and repeating elements do not change a set. {ℕ,ℤ,ℚ,ℝ} has four elements, each of which is itself a set.\n\n## Common mistake\nDistinguish the objects inside outer braces from their own contents.\n\n## How it shows up on the test\nRead nested sets carefully and ignore duplicate elements."
   },
   {
-    "id": "2.1-power",
+    "id": "2.1-notation",
     "section": "2.1",
-    "title": "power",
-    "order": 28,
-    "notes": "The set of all subsets of S. If |S| = n, then |P(S)| = 2ⁿ."
+    "title": "Roster, set-builder, intervals",
+    "order": 74,
+    "notes": "## Definition and key facts\nRoster notation lists elements. Set-builder notation describes exactly which objects qualify. Interval notation describes real numbers between endpoints.\n\n## Worked example\n{1,3,…,99}={x∈ℤ : x is odd and 1≤x≤99}. (a,b]={x∈ℝ : a<x≤b}; [a,b] includes both endpoints, (a,b) includes neither.\n\n## Common mistake\nAn interval contains real numbers, not just the displayed integer endpoints.\n\n## How it shows up on the test\nTranslate between notation styles and test endpoints."
+  },
+  {
+    "id": "2.1-standard",
+    "section": "2.1",
+    "title": "Standard number sets",
+    "order": 75,
+    "notes": "## Definition and key facts\nℕ={0,1,2,…}, ℤ={…,−1,0,1,…}, ℤ⁺={1,2,…}; ℚ rational, ℚ⁺ positive rational, ℝ real, ℝ⁺ positive real, ℂ complex. ℕ includes 0 in this class.\n\n## Worked example\nℤ⁺⊂ℕ⊂ℤ⊂ℚ⊂ℝ⊂ℂ. Also ℤ⁺⊂ℚ⁺⊂ℝ⁺⊂ℝ and ℚ⁺⊂ℚ. √2∈ℝ but √2∉ℚ.\n\n## Common mistake\nℝ⁺ excludes 0; ℕ does not.\n\n## How it shows up on the test\nIdentify memberships and subset relationships among standard sets."
   },
   {
     "id": "2.1-empty",
     "section": "2.1",
-    "title": "empty",
-    "order": 29,
-    "notes": "No. ∅ has 0 elements. {∅} has 1 element: the empty set."
+    "title": "Empty set and singleton",
+    "order": 76,
+    "notes": "## Definition and key facts\nThe empty set ∅={} is the only set with no elements. A singleton has exactly one element.\n\n## Worked example\n|∅|=0 but |{∅}|=1. {x∈ℤ:x²=1 and x>0}={1}, a singleton.\n\n## Common mistake\nBraces add a new set level: {∅} is not empty.\n\n## How it shows up on the test\nDistinguish zero elements from one empty-set element."
+  },
+  {
+    "id": "2.1-equality",
+    "section": "2.1",
+    "title": "Set equality",
+    "order": 77,
+    "notes": "## Definition and key facts\nA=B iff every element of A is in B and every element of B is in A; equivalently A⊆B and B⊆A.\n\n## Worked example\n{1,1,3,3,5,5} and {3,1,5,1} equal {1,3,5}. {∅,1,3,5} does not, since it contains ∅. {{1},{3},{5}} does not, since its elements are sets.\n\n## Common mistake\nEqual cardinality does not imply equal sets.\n\n## How it shows up on the test\nProve equality by two subset inclusions or disprove it with one differing element."
+  },
+  {
+    "id": "2.1-universal",
+    "section": "2.1",
+    "title": "Universal set",
+    "order": 78,
+    "notes": "## Definition and key facts\nThe universal set U contains all objects currently under consideration. It depends on the problem context.\n\n## Worked example\nWhen studying students in a class, U may be that class. In an interval problem, U is commonly ℝ. The universe for subsets of {0,1,2} can be {0,1,2}.\n\n## Common mistake\nDo not assume one universal set for every problem.\n\n## How it shows up on the test\nState the relevant universe when using set-builder notation."
+  },
+  {
+    "id": "2.1-subset",
+    "section": "2.1",
+    "title": "Subset, superset, subset proofs",
+    "order": 79,
+    "notes": "## Definition and key facts\nA⊆B means ∀x(x∈A→x∈B). B⊇A says the same thing. To prove A⊆B, choose arbitrary x∈A and show x∈B.\n\n## Worked example\nPf Suppose x∈{2k:k∈ℤ}. Then x=2k for some integer k, so x∈ℤ. Hence the even integers form a subset of ℤ. ∎ To disprove an inclusion, give x in A but outside B.\n\n## Common mistake\nA∈B and A⊆B make different claims: one concerns an element, one every element.\n\n## How it shows up on the test\nProve a subset statement in the arbitrary-element format."
+  },
+  {
+    "id": "2.1-proper",
+    "section": "2.1",
+    "title": "Proper subsets and supersets",
+    "order": 80,
+    "notes": "## Definition and key facts\nA⊂B (also A⊊B) means A⊆B and A≠B. Equivalently every element of A lies in B and some element of B lies outside A. B is a proper superset of A.\n\n## Worked example\n{1}⊂{1,2}, with witness 2 for strictness. A⊆A is true, but A⊂A is false.\n\n## Common mistake\nThis app uses ⊂ strictly, following the class convention.\n\n## How it shows up on the test\nProve the inclusion and exhibit an extra element."
+  },
+  {
+    "id": "2.1-empty-subset",
+    "section": "2.1",
+    "title": "∅⊆A and A⊆A",
+    "order": 81,
+    "notes": "## Definition and key facts\nFor every set A, ∅⊆A and A⊆A. The first uses a vacuously true implication; the second uses reflexivity.\n\n## Worked example\nPf There is no x∈∅ that could fail to lie in A, so every element of ∅ belongs to A. Also, if x∈A then x∈A, so A⊆A. ∎\n\n## Common mistake\n∅⊆A does not imply ∅∈A. For A={1}, only the subset statement holds.\n\n## How it shows up on the test\nExplain why empty-set inclusion needs no element witness."
+  },
+  {
+    "id": "2.1-cardinality",
+    "section": "2.1",
+    "title": "Finite sets and cardinality",
+    "order": 82,
+    "notes": "## Definition and key facts\nA finite set has n distinct elements for some nonnegative integer n; its cardinality is |S|=n. A set that is not finite is infinite.\n\n## Worked example\n|{1,1,2}|=2; |{∅,{∅}}|=2; |{{1}}|=1; |∅|=0. ℕ is infinite even though it starts at 0.\n\n## Common mistake\nCount outermost distinct elements, not symbols or entries before removing duplicates.\n\n## How it shows up on the test\nCompute sizes of rosters and nested sets."
+  },
+  {
+    "id": "2.1-power",
+    "section": "2.1",
+    "title": "Power sets and 2ⁿ",
+    "order": 83,
+    "notes": "## Definition and key facts\nP(S) is the set of all subsets of S. If |S|=n then |P(S)|=2ⁿ: each element has two independent choices, included or omitted.\n\n## Worked example\nP({0,1,2})={∅,{0},{1},{2},{0,1},{0,2},{1,2},{0,1,2}}. P(∅)={∅}. P({∅})={∅,{∅}}.\n\n## Common mistake\nInclude both ∅ and the original set; list subsets, not just elements.\n\n## How it shows up on the test\nList a small power set or compute its cardinality."
+  },
+  {
+    "id": "2.1-nested",
+    "section": "2.1",
+    "title": "Nested sets",
+    "order": 84,
+    "notes": "## Definition and key facts\nAn inner set is one element when it appears inside outer braces. Membership removes one brace level; subset compares elements without removing a level.\n\n## Worked example\nFor A={{1}}, {1}∈A is true and 1∈A is false. {1}⊆A is false, since 1∉A. {{1}}⊆A is true because A⊆A.\n\n## Common mistake\nDo not flatten a nested set. ∅ and {∅} are different objects.\n\n## How it shows up on the test\nJudge ∈ and ⊆ statements involving ∅, {∅}, and {{1}}."
   }
 ]
