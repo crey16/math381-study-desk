@@ -1,6 +1,7 @@
 import {fresh,mastery,validate} from './store.js';
 import {matches,parse,canonical} from './normalize.js';
 import {choices,nextRound,shuffle,mark,status} from './learn.js';
+import {argument} from './generators.js';
 import {state} from './store.js';
 const results=[];export function test(name,fn){try{if(!fn())throw Error('Assertion false');results.push('PASS '+name);}catch(e){results.push('FAIL '+name+': '+e.message);}document.querySelector('#results').textContent=results.join('\n');document.title=results.some(r=>r.startsWith('FAIL'))?'FAIL':'PASS';}
 test('Empty progress has zero mastery',()=>mastery('t',[],[],fresh()).mastery===0);
@@ -39,3 +40,4 @@ test('Learn choices never exceed available distinct backs',()=>choices(deck[4],d
 test('Shuffle preserves elements',()=>shuffle([1,2,3,4],seq()).sort().join()==='1,2,3,4');
 test('Learn round skips known cards and puts still-learning first',()=>{const keep=state.flashcards;state.flashcards={'fc-1.1-a-0':{learn:'known'},'fc-1.3-c-0':{learn:'learning'}};const r=nextRound(deck,seq());state.flashcards=keep;return r.length===5&&r[0].id==='fc-1.3-c-0'&&!r.some(c=>c.id==='fc-1.1-a-0');});
 test('Mark known raises the box and stores status',()=>{const keep=state.flashcards;state.flashcards={};mark('x',true);const v=state.flashcards.x;const ok=v.box===2&&v.learn==='known'&&v.lastRating==='good';mark('x',false);const ok2=state.flashcards.x.box===1&&state.flashcards.x.learn==='learning';state.flashcards=keep;localStorage.removeItem('math381.v1');return ok&&ok2;});
+test('Argument prompt stacks premises and conclusion',()=>argument('p → q; ¬q ∴ ¬p')==='p → q\n¬q\n∴ ¬p'&&argument('p ∴ p ∨ q')==='p\n∴ p ∨ q');
