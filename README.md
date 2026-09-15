@@ -8,9 +8,11 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. No build, package install, or network service is required. KaTeX and its fonts are local; Unicode remains readable without it.
 
-Study in order: Flashcards → Rapid-fire → Weakness report → Problem grind.
+Study in order: Flashcards (flip cards, then Learn) → Rapid-fire → Weakness report → Problem grind.
 
-Keyboard: home `1–4` selects a mode; `Esc` returns home; `?` shows help. Cards: `Space` flips, `1–4` rates Again/Hard/Good/Easy, arrows navigate. Rapid-fire: type for auto-advance, `Enter` submits a miss, Escape ends the session. Problems: `N`/`P` navigate, `H` reveals hints, `S` toggles the solution, `1`/`2`/`3` grades Wrong/Partly/Right. Shortcuts are inactive while typing scratch work; Tab navigates controls.
+Learn (`#flashcards/learn`) works like Quizlet Learn: rounds of seven multiple-choice questions with distractors drawn from the same topic, then you mark each card Know or Still learning. Known cards leave the rotation; still-learning cards come back first in the next round. Marks feed the Leitner boxes (Know = Good, Don't know = Again) and appear on the flip-card view, which has the same K / D buttons.
+
+Keyboard: home `1–4` selects a mode; `Esc` returns home; `?` shows help. Cards: `Space` flips, `1–4` rates Again/Hard/Good/Easy, `K`/`D` marks Know/Don't know, arrows navigate. Learn: `1–4` picks an answer, `K`/`D` marks it, `Enter` accepts the highlighted mark or starts the next round. Rapid-fire: type for auto-advance, `Enter` submits a miss, Escape ends the session. Problems: `N`/`P` navigate, `H` reveals hints, `S` toggles the solution, `1`/`2`/`3` grades Wrong/Partly/Right. Shortcuts are inactive while typing scratch work; Tab navigates controls.
 
 Progress is stored only in `localStorage["math381.v1"]`. Export for backup or transfer; Import validates then asks before replacing progress. Reset asks for confirmation. A page refresh loads updated content while preserving progress. Keep the same host/port to use the same browser storage.
 

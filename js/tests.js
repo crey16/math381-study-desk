@@ -1,5 +1,7 @@
 import {fresh,mastery,validate} from './store.js';
 import {matches,parse,canonical} from './normalize.js';
+import {choices,nextRound,shuffle,mark,status} from './learn.js';
+import {state} from './store.js';
 const results=[];export function test(name,fn){try{if(!fn())throw Error('Assertion false');results.push('PASS '+name);}catch(e){results.push('FAIL '+name+': '+e.message);}document.querySelector('#results').textContent=results.join('\n');document.title=results.some(r=>r.startsWith('FAIL'))?'FAIL':'PASS';}
 test('Empty progress has zero mastery',()=>mastery('t',[],[],fresh()).mastery===0);
 test('Unrated cards count as zero',()=>{const s=fresh();s.flashcards.a={lastRating:'easy',seen:1};return mastery('t',[{id:'a',topic:'t'},{id:'b',topic:'t'}],[],s).mastery===.2;});
@@ -26,3 +28,14 @@ test('Quantifier with parenthesised body',()=>matches('∀x(P(x))','∀x P(x)','
 test('Negated glued quantifier',()=>matches('¬∀xP(x)','not forall x P(x)','symbolic'));
 test('Glued quantifier keeps order',()=>!matches('∀x∃yP(x,y)','∃y∀xP(x,y)','symbolic'));
 test('Glued letters after quantifier split as variable then body',()=>canonical(parse('∀xy'))==='∀x(y)');
+
+test('Learn status accepted by validate',()=>{const s=fresh();s.flashcards.a={box:1,lastRating:'again',lastSeen:1,seen:1,learn:'learning'};return validate(s)===s;});
+test('Bad learn status rejected',()=>{const s=fresh();s.flashcards.a={box:1,lastRating:'again',lastSeen:1,seen:1,learn:'maybe'};try{validate(s);return false;}catch{return true;}});
+const deck=[{id:'fc-1.1-a-0',topic:'1.1-a',back:'A'},{id:'fc-1.1-a-1',topic:'1.1-a',back:'B'},{id:'fc-1.1-a-2',topic:'1.1-a',back:'B'},{id:'fc-1.1-b-0',topic:'1.1-b',back:'C'},{id:'fc-1.3-c-0',topic:'1.3-c',back:'D'},{id:'fc-1.3-c-1',topic:'1.3-c',back:'A'}];
+const seq=()=>{let n=0;return()=>((n+=7)%11)/11;};
+test('Learn choices: four options, card included, backs distinct',()=>{const o=choices(deck[0],deck,4,seq());return o.length===4&&o.some(x=>x.id===deck[0].id)&&new Set(o.map(x=>x.back)).size===4;});
+test('Learn choices prefer same topic, then section',()=>{const o=choices(deck[0],deck,4,seq()).filter(x=>x.id!==deck[0].id);return o.some(x=>x.topic==='1.1-a')&&o.some(x=>x.id==='fc-1.1-b-0');});
+test('Learn choices never exceed available distinct backs',()=>choices(deck[4],deck.slice(4),4,seq()).length===2&&choices(deck[1],[deck[1],deck[2]],4,seq()).length===1);
+test('Shuffle preserves elements',()=>shuffle([1,2,3,4],seq()).sort().join()==='1,2,3,4');
+test('Learn round skips known cards and puts still-learning first',()=>{const keep=state.flashcards;state.flashcards={'fc-1.1-a-0':{learn:'known'},'fc-1.3-c-0':{learn:'learning'}};const r=nextRound(deck,seq());state.flashcards=keep;return r.length===5&&r[0].id==='fc-1.3-c-0'&&!r.some(c=>c.id==='fc-1.1-a-0');});
+test('Mark known raises the box and stores status',()=>{const keep=state.flashcards;state.flashcards={};mark('x',true);const v=state.flashcards.x;const ok=v.box===2&&v.learn==='known'&&v.lastRating==='good';mark('x',false);const ok2=state.flashcards.x.box===1&&state.flashcards.x.learn==='learning';state.flashcards=keep;localStorage.removeItem('math381.v1');return ok&&ok2;});
