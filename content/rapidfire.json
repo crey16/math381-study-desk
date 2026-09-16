@@ -13,6 +13,10 @@
       "generator": "rule"
     },
     {
+      "id": "rulematch",
+      "generator": "rulematch"
+    },
+    {
       "id": "validity",
       "generator": "validity"
     },
