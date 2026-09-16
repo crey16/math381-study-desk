@@ -128,15 +128,6 @@
       "why": "Both hypotheses unpack (m + n = 2k, n + p = 2j); subtract and compute m + p = 2(k − j) + 2n... a positive conclusion reached directly."
     },
     {
-      "id": "method-direct-10",
-      "cat": "method",
-      "prompt": "If a, b, c are integers with a ≠ 0, a | b and b | c, then a | c.",
-      "accepted": [
-        "direct"
-      ],
-      "why": "“a | b” unpacks to b = ak; substitute into c = bj and the conclusion appears."
-    },
-    {
       "id": "method-direct-11",
       "cat": "method",
       "prompt": "If n is an even integer, then n³ is even.",
@@ -588,15 +579,6 @@
         "counterexample"
       ],
       "why": "9 is odd and not prime: false."
-    },
-    {
-      "id": "method-ce-5",
-      "cat": "method",
-      "prompt": "Prove or disprove: for integers a, b, c, if a | bc then a | b.",
-      "accepted": [
-        "counterexample"
-      ],
-      "why": "6 | 3 · 4 but 6 ∤ 3: false."
     },
     {
       "id": "method-ce-6",

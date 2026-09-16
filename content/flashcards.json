@@ -1836,7 +1836,7 @@
     "id": "fc-1.7-choosing-direct",
     "topic": "1.7-choosing-a-method",
     "front": "When is a direct proof the right choice?",
-    "back": "The hypothesis is a positive, unpackable property (even, odd, rational, perfect square, a | b) and the conclusion is positive. You can write “there exists k so that …” immediately.",
+    "back": "The hypothesis is a positive, unpackable property (even, odd, rational, perfect square) and the conclusion is positive. You can write “there exists k so that …” immediately.",
     "tags": [
       "class",
       "method"
