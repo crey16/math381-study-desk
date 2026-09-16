@@ -1,5 +1,5 @@
 export const KEY='math381.v1';
-export const fresh=()=>({version:1,settings:{theme:'dark',rfDuration:120,rfWrongDelayMs:0},flashcards:{},rapidfire:{attempts:[],sessions:[]},problems:{}});
+export const fresh=()=>({version:1,settings:{theme:'dark',rfDuration:120,rfWrongDelayMs:0,strictContradiction:false},flashcards:{},rapidfire:{attempts:[],sessions:[]},problems:{}});
 export function validate(s){
  if(!s||s.version!==1||!s.settings||!s.flashcards||!s.problems||!Array.isArray(s.rapidfire?.attempts)||!Array.isArray(s.rapidfire?.sessions))throw Error('Not a MATH 381 version 1 progress file.');
  if(!['dark','light'].includes(s.settings.theme)||![0,60,120,180].includes(s.settings.rfDuration)||!Number.isFinite(s.settings.rfWrongDelayMs)||s.settings.rfWrongDelayMs<0)throw Error('Invalid settings.');

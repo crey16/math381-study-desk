@@ -1820,5 +1820,126 @@
       "translation"
     ],
     "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-summary",
+    "topic": "1.7-choosing-a-method",
+    "front": "Give the one-line rule for choosing a proof method.",
+    "back": "Positive hypothesis → direct\nUnhelpful hypothesis, conclusion easy to negate → contraposition\nBare negative claim → contradiction\nIf-then with a negative conclusion contraposition doesn’t fix → contradiction of an implication\n“iff” → both directions\n“equivalent” → cycle\n“prove or disprove” → try to break it first",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-direct",
+    "topic": "1.7-choosing-a-method",
+    "front": "When is a direct proof the right choice?",
+    "back": "The hypothesis is a positive, unpackable property (even, odd, rational, perfect square, a | b) and the conclusion is positive. You can write “there exists k so that …” immediately.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-contraposition",
+    "topic": "1.7-choosing-a-method",
+    "front": "When should you switch to contraposition?",
+    "back": "The hypothesis is hard to unpack but the negated conclusion is easy.\nTells: conclusion “n is even/odd” with a hypothesis about 3n + 2, n³ + 5, mn or n²; an “or” conclusion; “x irrational ⇒ 1/x irrational”.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-contradiction",
+    "topic": "1.7-choosing-a-method",
+    "front": "When is contradiction of a proposition the method?",
+    "back": "The statement is not an if-then and is a negative claim: “√2 is irrational”, “there is no rational r with …”.\nTells: irrational, no, not, there is no, roots.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-ci",
+    "topic": "1.7-choosing-a-method",
+    "front": "When do you use contradiction of an implication?",
+    "back": "It is an if-then, the conclusion is negative, and contraposition would still leave an irrational or negative hypothesis to unpack.\nAssume p and ¬q, derive a contradiction.\nExample: x irrational, y rational ⇒ x + y irrational.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-iff",
+    "topic": "1.7-choosing-a-method",
+    "front": "What does “if and only if” tell you to do?",
+    "back": "Prove both directions, (→) and (←), possibly by different methods.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-choosing-tfae",
+    "topic": "1.7-choosing-a-method",
+    "front": "How do you handle “show these statements are equivalent”?",
+    "back": "Prove a cycle p₁ → p₂ → p₃ → p₁; transitivity gives every other direction.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-choosing-disprove",
+    "topic": "1.7-choosing-a-method",
+    "front": "What do you do first with “prove or disprove”?",
+    "back": "Test small examples (0, 1, 2, √2 pairs) to try to break it. False → counterexample. True → whichever method proves it.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "fc-1.7-choosing-example-1",
+    "topic": "1.7-choosing-a-method",
+    "front": "Which method for “if 3n + 2 is odd, then n is odd”, and why?",
+    "back": "Contraposition. The hypothesis is about 3n + 2 and cannot be unpacked; the negated conclusion “n is even” gives n = 2k at once.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-choosing-example-2",
+    "topic": "1.7-choosing-a-method",
+    "front": "Which method for “if x is irrational and y is rational, then x + y is irrational”, and why?",
+    "back": "Contradiction of an implication. The conclusion is negative and contraposing still leaves irrationality to unpack; assume x + y rational and get x = (x + y) − y rational.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "fc-1.7-choosing-example-3",
+    "topic": "1.7-choosing-a-method",
+    "front": "Which method for “√6 is irrational”, and why?",
+    "back": "Contradiction of a proposition. It is a bare negative claim, not an if-then: assume √6 = p/q in lowest terms.",
+    "tags": [
+      "class",
+      "method"
+    ],
+    "priority": 2
   }
 ]

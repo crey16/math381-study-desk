@@ -39,6 +39,664 @@
     {
       "id": "definition",
       "generator": "definition"
+    },
+    {
+      "id": "method",
+      "generator": "method"
+    }
+  ],
+  "method": [
+    {
+      "id": "method-direct-1",
+      "cat": "method",
+      "prompt": "If m and n are both even integers, then m + n is even.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-2",
+      "cat": "method",
+      "prompt": "If m and n are both odd integers, then m + n is even.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-3",
+      "cat": "method",
+      "prompt": "If m and n are odd integers, then mn is odd.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-4",
+      "cat": "method",
+      "prompt": "If n is an odd integer, then n² is odd.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-5",
+      "cat": "method",
+      "prompt": "If n is an even integer, then n² + n is even.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-6",
+      "cat": "method",
+      "prompt": "If x and y are rational numbers, then x − y is rational.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-7",
+      "cat": "method",
+      "prompt": "If x and y are rational numbers, then xy is rational.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-8",
+      "cat": "method",
+      "prompt": "If m and n are perfect squares, then mn is a perfect square.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "m = k² and n = j² unpack at once; mn = (kj)² is the positive conclusion."
+    },
+    {
+      "id": "method-direct-9",
+      "cat": "method",
+      "prompt": "If m + n and n + p are even integers, then m + p is even.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Both hypotheses unpack (m + n = 2k, n + p = 2j); subtract and compute m + p = 2(k − j) + 2n... a positive conclusion reached directly."
+    },
+    {
+      "id": "method-direct-10",
+      "cat": "method",
+      "prompt": "If a, b, c are integers with a ≠ 0, a | b and b | c, then a | c.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "“a | b” unpacks to b = ak; substitute into c = bj and the conclusion appears."
+    },
+    {
+      "id": "method-direct-11",
+      "cat": "method",
+      "prompt": "If n is an even integer, then n³ is even.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-direct-12",
+      "cat": "method",
+      "prompt": "If m is even and n is odd, then m + n is odd.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Hypothesis unpacks immediately (n = 2k, x = p/q, n = k²) and the conclusion is positive: compute straight through."
+    },
+    {
+      "id": "method-cp-1",
+      "cat": "method",
+      "prompt": "If n is an integer and 3n + 2 is odd, then n is odd.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "The hypothesis is about an expression in n, which you cannot unpack; the negated conclusion “n is even/odd” unpacks to n = 2k at once."
+    },
+    {
+      "id": "method-cp-2",
+      "cat": "method",
+      "prompt": "If n is an integer and n³ + 5 is odd, then n is even.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "The hypothesis is about an expression in n, which you cannot unpack; the negated conclusion “n is even/odd” unpacks to n = 2k at once."
+    },
+    {
+      "id": "method-cp-3",
+      "cat": "method",
+      "prompt": "If m and n are integers and mn is even, then m is even or n is even.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "The conclusion is an “or”; negating it gives the “and” m odd and n odd, which unpacks easily and forces mn odd."
+    },
+    {
+      "id": "method-cp-4",
+      "cat": "method",
+      "prompt": "If x and y are real numbers with x + y ≥ 2, then x ≥ 1 or y ≥ 1.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "Negate the “or”: x < 1 and y < 1, then add the inequalities to contradict the hypothesis."
+    },
+    {
+      "id": "method-cp-5",
+      "cat": "method",
+      "prompt": "If n is an integer and n² is even, then n is even.",
+      "accepted": [
+        "contraposition",
+        "contradiction"
+      ],
+      "why": "n² even does not unpack to anything about n; “n is odd” unpacks to n = 2k + 1 and squares to an odd number."
+    },
+    {
+      "id": "method-cp-6",
+      "cat": "method",
+      "prompt": "If n = ab with a and b positive integers, then a ≤ √n or b ≤ √n.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "Negating the “or” gives a > √n and b > √n; multiply to get ab > n, contradicting n = ab."
+    },
+    {
+      "id": "method-cp-7",
+      "cat": "method",
+      "prompt": "If x is irrational, then 1/x is irrational.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "“x is irrational” cannot be unpacked, but the negated conclusion “1/x is rational” gives 1/x = p/q, so x = q/p is rational."
+    },
+    {
+      "id": "method-cp-8",
+      "cat": "method",
+      "prompt": "If x is irrational, then x/2 is irrational.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "Negated conclusion: x/2 = p/q is rational, so x = 2p/q is rational, contradicting the hypothesis."
+    },
+    {
+      "id": "method-cp-9",
+      "cat": "method",
+      "prompt": "If x, y, z are integers and x + y + z is odd, then at least one of x, y, z is odd.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "Negate “at least one is odd” to “all are even”; then the sum is even."
+    },
+    {
+      "id": "method-cp-10",
+      "cat": "method",
+      "prompt": "If n is an integer and 5n + 3 is even, then n is odd.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "The hypothesis is about an expression in n, which you cannot unpack; the negated conclusion “n is even/odd” unpacks to n = 2k at once."
+    },
+    {
+      "id": "method-cp-11",
+      "cat": "method",
+      "prompt": "If n is an integer and n² is odd, then n is odd.",
+      "accepted": [
+        "contraposition",
+        "contradiction"
+      ],
+      "why": "n² odd does not unpack; “n is even” gives n = 2k and n² = 2(2k²) is even."
+    },
+    {
+      "id": "method-cp-12",
+      "cat": "method",
+      "prompt": "If n is an integer and n² + 1 is even, then n is odd.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "The hypothesis is about an expression in n, which you cannot unpack; the negated conclusion “n is even/odd” unpacks to n = 2k at once."
+    },
+    {
+      "id": "method-cp-13",
+      "cat": "method",
+      "prompt": "If the product of two integers m and n is odd, then both m and n are odd.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "Negate the conclusion: one of them is even, say m = 2k; then mn = 2(kn) is even."
+    },
+    {
+      "id": "method-cd-1",
+      "cat": "method",
+      "prompt": "√2 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "A bare negative claim (“irrational”), not an if-then: assume √2 = p/q in lowest terms and derive that p and q are both even."
+    },
+    {
+      "id": "method-cd-2",
+      "cat": "method",
+      "prompt": "√3 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Bare negative claim: assume √3 = p/q reduced; 3 | p² forces 3 | p, then 3 | q, contradicting lowest terms."
+    },
+    {
+      "id": "method-cd-3",
+      "cat": "method",
+      "prompt": "∛2 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Bare negative claim: assume ∛2 = p/q reduced and use the lemma “n³ even ⇒ n even” to make both p and q even."
+    },
+    {
+      "id": "method-cd-4",
+      "cat": "method",
+      "prompt": "√6 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Bare negative claim: assume √6 = p/q reduced; p² = 6q² makes p even, then q even."
+    },
+    {
+      "id": "method-cd-5",
+      "cat": "method",
+      "prompt": "There is no rational number r with r³ + r + 1 = 0.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "“There is no …” is a negative existence claim: assume r = p/q in lowest terms and check parities of p³ + pq² + q³."
+    },
+    {
+      "id": "method-cd-6",
+      "cat": "method",
+      "prompt": "There are no positive integers x and y with x² + x + 1 = y².",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Negative existence claim: assume a solution and squeeze y² between x² and (x + 1)²."
+    },
+    {
+      "id": "method-cd-7",
+      "cat": "method",
+      "prompt": "log₂ 3 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Bare negative claim: assume log₂ 3 = p/q, so 2^p = 3^q, an even number equal to an odd one."
+    },
+    {
+      "id": "method-cd-8",
+      "cat": "method",
+      "prompt": "There is no largest even integer.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Negative existence claim: assume a largest even integer N and produce N + 2."
+    },
+    {
+      "id": "method-cd-9",
+      "cat": "method",
+      "prompt": "There is no smallest positive rational number.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "Negative existence claim: assume a smallest positive rational r and produce r/2."
+    },
+    {
+      "id": "method-ci-1",
+      "cat": "method",
+      "prompt": "If x is irrational and y is rational, then x + y is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "If-then with a negative conclusion; contraposing still leaves “x is rational or y is irrational” to unpack. Assume x irrational, y rational, and x + y rational, then x = (x + y) − y is rational."
+    },
+    {
+      "id": "method-ci-2",
+      "cat": "method",
+      "prompt": "If x is a nonzero rational number and y is irrational, then xy is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Assume p and ¬q: xy = r rational, so y = r/x is rational, contradicting the hypothesis."
+    },
+    {
+      "id": "method-ci-3",
+      "cat": "method",
+      "prompt": "If n is a perfect square, then n + 2 is not a perfect square.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Negative conclusion (“not a perfect square”): assume n = k² and n + 2 = j², then (j − k)(j + k) = 2 has no integer solutions."
+    },
+    {
+      "id": "method-ci-4",
+      "cat": "method",
+      "prompt": "If x is irrational and x > 0, then √x is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Assume p and ¬q: √x = p/q rational, then x = p²/q² is rational, contradicting the hypothesis."
+    },
+    {
+      "id": "method-ci-5",
+      "cat": "method",
+      "prompt": "If a, b, c are integers with a² + b² = c², then at least one of a, b, c is even.",
+      "accepted": [
+        "contradiction-implication",
+        "contraposition"
+      ],
+      "why": "Assume the hypothesis and that a, b, c are all odd; then a² + b² is even but c² is odd."
+    },
+    {
+      "id": "method-ci-6",
+      "cat": "method",
+      "prompt": "If x is irrational and y is rational, then x − y is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Assume x − y = r rational; then x = r + y is rational, contradicting the hypothesis."
+    },
+    {
+      "id": "method-ci-7",
+      "cat": "method",
+      "prompt": "If x is a nonzero rational number and y is irrational, then y/x is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Assume y/x = r rational; then y = rx is rational."
+    },
+    {
+      "id": "method-ci-8",
+      "cat": "method",
+      "prompt": "If n is an integer, then n² − 2 is not a perfect square.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "Negative conclusion: assume n² − 2 = m²; then (n − m)(n + m) = 2, impossible for integers."
+    },
+    {
+      "id": "method-iff-1",
+      "cat": "method",
+      "prompt": "An integer n is odd if and only if n² is odd.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: prove (→) directly and (←) by contraposition."
+    },
+    {
+      "id": "method-iff-2",
+      "cat": "method",
+      "prompt": "An integer n is even if and only if 7n + 4 is even.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: two directions, labeled (→) and (←)."
+    },
+    {
+      "id": "method-iff-3",
+      "cat": "method",
+      "prompt": "For integers m and n, m² = n² if and only if m = n or m = −n.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: prove both directions; (→) factors (m − n)(m + n) = 0."
+    },
+    {
+      "id": "method-iff-4",
+      "cat": "method",
+      "prompt": "A real number x is rational if and only if 2x is rational.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: both directions are direct."
+    },
+    {
+      "id": "method-iff-5",
+      "cat": "method",
+      "prompt": "An integer n is odd if and only if n + 1 is even.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: two direct directions."
+    },
+    {
+      "id": "method-iff-6",
+      "cat": "method",
+      "prompt": "An integer n is even if and only if 3n + 2 is even.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: (→) direct, (←) by contraposition."
+    },
+    {
+      "id": "method-iff-7",
+      "cat": "method",
+      "prompt": "A real number x is rational if and only if x + 1 is rational.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: both directions are direct."
+    },
+    {
+      "id": "method-iff-8",
+      "cat": "method",
+      "prompt": "An integer n is odd if and only if n³ is odd.",
+      "accepted": [
+        "biconditional"
+      ],
+      "why": "“If and only if”: (→) direct, (←) by contraposition."
+    },
+    {
+      "id": "method-tfae-1",
+      "cat": "method",
+      "prompt": "Show that for an integer n these are equivalent: (i) n is even; (ii) n − 1 is odd; (iii) n² is even.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "Three statements to be shown equivalent: prove the cycle (i) → (ii) → (iii) → (i)."
+    },
+    {
+      "id": "method-tfae-2",
+      "cat": "method",
+      "prompt": "Show that for an integer x these are equivalent: (i) 3x + 2 is even; (ii) x + 5 is odd; (iii) x² is even.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "“Equivalent” with three statements: prove a cycle."
+    },
+    {
+      "id": "method-tfae-3",
+      "cat": "method",
+      "prompt": "Show that for a real number x these are equivalent: (i) x is rational; (ii) x/2 is rational; (iii) 3x − 1 is rational.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "“Equivalent” with three statements: prove a cycle."
+    },
+    {
+      "id": "method-tfae-4",
+      "cat": "method",
+      "prompt": "Show that for an integer n these four statements are equivalent: (i) n is even; (ii) n + 1 is odd; (iii) 3n + 1 is odd; (iv) 3n is even.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "Four statements: one cycle of four implications covers every direction."
+    },
+    {
+      "id": "method-tfae-5",
+      "cat": "method",
+      "prompt": "Show that for an integer n these four statements are equivalent: (i) n is odd; (ii) 5n + 6 is odd; (iii) n² is odd; (iv) n + 1 is even.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "Four statements: prove (i) → (ii) → (iii) → (iv) → (i)."
+    },
+    {
+      "id": "method-tfae-6",
+      "cat": "method",
+      "prompt": "Show that for an integer n these are equivalent: (i) n is odd; (ii) n² + 1 is even; (iii) n + 2 is odd.",
+      "accepted": [
+        "tfae"
+      ],
+      "why": "“Equivalent” with three statements: prove a cycle."
+    },
+    {
+      "id": "method-ce-1",
+      "cat": "method",
+      "prompt": "Prove or disprove: the product of two irrational numbers is irrational.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "Test examples first: √2 · √2 = 2 is rational, so the statement is false."
+    },
+    {
+      "id": "method-ce-2",
+      "cat": "method",
+      "prompt": "Prove or disprove: the sum of two irrational numbers is irrational.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "√2 + (−√2) = 0 is rational: false, so give the counterexample."
+    },
+    {
+      "id": "method-ce-3",
+      "cat": "method",
+      "prompt": "Prove or disprove: if n is a positive integer, then n² + n + 1 is prime.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "n = 4 gives 21 = 3 · 7: false."
+    },
+    {
+      "id": "method-ce-4",
+      "cat": "method",
+      "prompt": "Prove or disprove: every odd integer greater than 1 is prime.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "9 is odd and not prime: false."
+    },
+    {
+      "id": "method-ce-5",
+      "cat": "method",
+      "prompt": "Prove or disprove: for integers a, b, c, if a | bc then a | b.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "6 | 3 · 4 but 6 ∤ 3: false."
+    },
+    {
+      "id": "method-ce-6",
+      "cat": "method",
+      "prompt": "Prove or disprove: if x + y is rational, then x and y are rational.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "x = √2, y = −√2 sum to 0: false."
+    },
+    {
+      "id": "method-ce-7",
+      "cat": "method",
+      "prompt": "Prove or disprove: the sum of two perfect squares is a perfect square.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "1 + 1 = 2 is not a perfect square: false."
+    },
+    {
+      "id": "method-ce-8",
+      "cat": "method",
+      "prompt": "Prove or disprove: if n is prime, then 2ⁿ − 1 is prime.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "n = 11 gives 2047 = 23 · 89: false."
+    },
+    {
+      "id": "method-ce-9",
+      "cat": "method",
+      "prompt": "Prove or disprove: if x is irrational, then x² is irrational.",
+      "accepted": [
+        "counterexample"
+      ],
+      "why": "x = √2 has x² = 2: false."
+    },
+    {
+      "id": "method-pod-1",
+      "cat": "method",
+      "prompt": "Prove or disprove: the product of two rational numbers is rational.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "Try to break it first; it holds, and rationals unpack (p/q · r/s), so prove it directly."
+    },
+    {
+      "id": "method-pod-2",
+      "cat": "method",
+      "prompt": "Prove or disprove: if x is a nonzero rational number and y is irrational, then xy is irrational.",
+      "accepted": [
+        "contradiction-implication"
+      ],
+      "why": "It holds; the conclusion is negative and contraposition leaves irrationality to unpack, so assume p and ¬q."
+    },
+    {
+      "id": "method-pod-3",
+      "cat": "method",
+      "prompt": "Prove or disprove: if x is irrational, then 1/x is irrational.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "It holds; the negated conclusion “1/x rational” unpacks, so contrapose."
+    },
+    {
+      "id": "method-pod-4",
+      "cat": "method",
+      "prompt": "Prove or disprove: if n is an integer and n² is even, then n is even.",
+      "accepted": [
+        "contraposition",
+        "contradiction"
+      ],
+      "why": "It holds; “n is odd” unpacks, so contrapose."
+    },
+    {
+      "id": "method-pod-5",
+      "cat": "method",
+      "prompt": "Prove or disprove: the sum of an even integer and an odd integer is odd.",
+      "accepted": [
+        "direct"
+      ],
+      "why": "It holds and both hypotheses unpack: 2k + (2j + 1)."
+    },
+    {
+      "id": "method-pod-6",
+      "cat": "method",
+      "prompt": "Prove or disprove: if n is an integer and 3n + 2 is even, then n is even.",
+      "accepted": [
+        "contraposition"
+      ],
+      "why": "It holds; the hypothesis is an expression in n, so contrapose to “n odd ⇒ 3n + 2 odd”."
+    },
+    {
+      "id": "method-pod-7",
+      "cat": "method",
+      "prompt": "Prove or disprove: √5 is irrational.",
+      "accepted": [
+        "contradiction"
+      ],
+      "why": "It holds and is a bare negative claim: assume √5 = p/q in lowest terms."
     }
   ]
 }
