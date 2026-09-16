@@ -1,7 +1,7 @@
 import {fresh,mastery,validate,missBank} from './store.js';
 import {matches,parse,canonical} from './normalize.js';
 import {choices,nextRound,shuffle,mark,status,distance} from './learn.js';
-import {argument,show,generators} from './generators.js';
+import {argument,show,generators,full} from './generators.js';
 import {evaluate} from './normalize.js';
 import {state} from './store.js';
 const results=[];export function test(name,fn){try{if(!fn())throw Error('Assertion false');results.push('PASS '+name);}catch(e){results.push('FAIL '+name+': '+e.message);}document.querySelector('#results').textContent=results.join('\n');document.title=results.some(r=>r.startsWith('FAIL'))?'FAIL':'PASS';}
@@ -49,3 +49,4 @@ test('Generated truth prompts are minimal and evaluate to their answer',()=>{for
 test('Set order follows topic order then priority',()=>{const o={a:1,b:2};const cs=[{id:'fc-1.1-b-0',topic:'b',priority:1},{id:'fc-1.1-a-1',topic:'a',priority:2},{id:'fc-1.1-a-0',topic:'a',priority:1},{id:'fc-1.3-x',topic:'a',priority:1}].filter(c=>c.id.split('-')[1]==='1.1').sort((x,y)=>(o[x.topic]||0)-(o[y.topic]||0)||x.priority-y.priority);return cs.map(c=>c.id).join()==='fc-1.1-a-0,fc-1.1-a-1,fc-1.1-b-0';});
 test('Learn distractors match the answer shape',()=>{const laws=[['dist','Distributive.','p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)\np ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)'],['comm','Commutative.','p ∨ q ≡ q ∨ p\np ∧ q ≡ q ∧ p'],['idem','Idempotent.','p ∨ p ≡ p\np ∧ p ≡ p'],['dn','Double negation.','¬¬p ≡ p'],['abs','Absorption.','p ∨ (p ∧ q) ≡ p\np ∧ (p ∨ q) ≡ p']];const deck=laws.flatMap(([k,name,forms])=>[{id:'fc-1.3-'+k+'-recall',topic:'1.3-'+k,back:name},{id:'fc-1.3-'+k+'-definition',topic:'1.3-'+k,back:forms}]);const o=choices(deck[1],deck,4,seq());return o.length===4&&o.every(x=>x.back.includes('≡'))&&choices(deck[0],deck,4,seq()).every(x=>!x.back.includes('≡'));});
 test('Shape distance: name vs formula is far, formula vs formula is near',()=>distance('Distributive.','p ∨ q ≡ q ∨ p')>distance('p ∧ q ≡ q ∧ p','p ∨ q ≡ q ∨ p'));
+test('Rule and law answers display full names',()=>full('conj')==='Conjunction (conj)'&&full('res')==='Resolution (res)'&&full('identity')==='Identity'&&generators.rule().display.length>4&&matches('conj',generators.conj?'x':'conj'));
