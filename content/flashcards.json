@@ -103,7 +103,7 @@
     "id": "fc-1.3-allowed-10",
     "topic": "1.3-allowed",
     "front": "Which Table 7/8 identities may you cite?",
-    "back": "Only p → q ≡ ¬p ∨ q; p → q ≡ ¬q → ¬p; p ↔ q ≡ (p → q) ∧ (q → p). All of Table 6 is allowed. Other Table 7/8 identities must be derived.",
+    "back": "Only these three:\np → q ≡ ¬p ∨ q (7.1)\np → q ≡ ¬q → ¬p (contrapositive)\np ↔ q ≡ (p → q) ∧ (q → p)\nAll of Table 6 is allowed. Everything else must be derived.",
     "tags": [
       "class"
     ],
@@ -142,7 +142,7 @@
   {
     "id": "fc-1.4-universal-14",
     "topic": "1.4-universal",
-    "front": "What does ∀xP(x) mean?",
+    "front": "What does ∀x P(x) mean?",
     "back": "For every x in the domain, P(x) is true.",
     "tags": [
       "class"
@@ -152,7 +152,7 @@
   {
     "id": "fc-1.4-existential-15",
     "topic": "1.4-existential",
-    "front": "What does ∃xP(x) mean?",
+    "front": "What does ∃x P(x) mean?",
     "back": "There exists some (at least one) x in the domain so that P(x) is true.",
     "tags": [
       "class"
@@ -162,8 +162,8 @@
   {
     "id": "fc-1.4-negating-16",
     "topic": "1.4-negating",
-    "front": "Negate ∀xP(x).",
-    "back": "∃x¬P(x). Flip the quantifier, negate the inside.",
+    "front": "Negate ∀x P(x).",
+    "back": "∃x ¬P(x). Flip the quantifier, negate the inside.",
     "tags": [
       "class"
     ],
@@ -172,8 +172,8 @@
   {
     "id": "fc-1.4-negating-17",
     "topic": "1.4-negating",
-    "front": "Negate ∃xP(x).",
-    "back": "∀x¬P(x).",
+    "front": "Negate ∃x P(x).",
+    "back": "∀x ¬P(x).",
     "tags": [
       "class"
     ],
@@ -183,7 +183,7 @@
     "id": "fc-1.4-distribution-18",
     "topic": "1.4-distribution",
     "front": "Does ∀x distribute over ∨?",
-    "back": "No. ∀x(P(x) ∨ Q(x)) ≢ ∀xP(x) ∨ ∀xQ(x). Different x may satisfy different predicates.",
+    "back": "No. ∀x (P(x) ∨ Q(x)) ≢ ∀x P(x) ∨ ∀x Q(x). Different x may satisfy different predicates.",
     "tags": [
       "class"
     ],
@@ -203,7 +203,7 @@
     "id": "fc-1.6-mp-20",
     "topic": "1.6-mp",
     "front": "State modus ponens.",
-    "back": "p → q, p, ∴ q.",
+    "back": "p → q\np\n∴ q",
     "tags": [
       "class"
     ],
@@ -213,7 +213,7 @@
     "id": "fc-1.6-mt-21",
     "topic": "1.6-mt",
     "front": "State modus tollens.",
-    "back": "p → q, ¬q, ∴ ¬p.",
+    "back": "p → q\n¬q\n∴ ¬p",
     "tags": [
       "class"
     ],
@@ -333,7 +333,7 @@
     "id": "fc-1.1-disjunction-recall",
     "topic": "1.1-disjunction",
     "front": "What is the only false row of p ∨ q?",
-    "back": "p=F and q=F.",
+    "back": "p = F and q = F.",
     "tags": [
       "recall"
     ],
@@ -395,7 +395,7 @@
     "id": "fc-1.1-converse-recall",
     "topic": "1.1-converse",
     "front": "Is the converse equivalent to the original?",
-    "back": "Not generally; p=F,q=T separates them.",
+    "back": "Not generally; p = F, q = T separates them.",
     "tags": [
       "recall"
     ],
@@ -414,8 +414,8 @@
   {
     "id": "fc-1.1-contrapositive-recall",
     "topic": "1.1-contrapositive",
-    "front": "Contrapose (p ∧ q) → r.",
-    "back": "¬r → (¬p ∨ ¬q).",
+    "front": "Give the contrapositive of (p ∧ q) → r.",
+    "back": "¬r → ¬(p ∧ q), i.e. ¬r → (¬p ∨ ¬q).",
     "tags": [
       "recall"
     ],
@@ -435,8 +435,8 @@
   {
     "id": "fc-1.1-truth-tables-recall",
     "topic": "1.1-truth-tables",
-    "front": "How many rows for p,q,r?",
-    "back": "2³=8.",
+    "front": "How many rows for p, q, r?",
+    "back": "2³ = 8.",
     "tags": [
       "recall"
     ],
@@ -456,8 +456,8 @@
   {
     "id": "fc-1.1-precedence-recall",
     "topic": "1.1-precedence",
-    "front": "Parse ¬p ∨ q ∧ r.",
-    "back": "(¬p) ∨ (q ∧ r).",
+    "front": "Parse ¬p ∨ q ∧ r with default precedence.",
+    "back": "(¬p) ∨ (q ∧ r). Negation binds tightest, then ∧, then ∨.",
     "tags": [
       "recall"
     ],
@@ -496,26 +496,6 @@
     "priority": 1
   },
   {
-    "id": "fc-1.3-equivalence-recall",
-    "topic": "1.3-equivalence",
-    "front": "What suffices to disprove equivalence?",
-    "back": "One assignment where the formulas have different truth values.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
-    "id": "fc-1.3-allowed-recall",
-    "topic": "1.3-allowed",
-    "front": "May all of Tables 7 and 8 be cited?",
-    "back": "No. Only conditional-disjunction, contrapositive, and the biconditional definition.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-1.3-successive-substitution-definition",
     "topic": "1.3-successive-substitution",
     "front": "How is a successive-substitution proof written?",
@@ -529,8 +509,8 @@
   {
     "id": "fc-1.3-successive-substitution-recall",
     "topic": "1.3-successive-substitution",
-    "front": "How do you negate an implication using allowed laws?",
-    "back": "7.1: ¬(¬p∨q); DM: ¬¬p∧¬q; DN: p∧¬q.",
+    "front": "Negate p → q using only allowed laws (show each step).",
+    "back": "¬(p → q)\n≡ ¬(¬p ∨ q) — 7.1\n≡ ¬¬p ∧ ¬q — De Morgan\n≡ p ∧ ¬q — double negation",
     "tags": [
       "recall"
     ],
@@ -546,16 +526,6 @@
       "definition"
     ],
     "priority": 1
-  },
-  {
-    "id": "fc-1.3-tautology-proofs-recall",
-    "topic": "1.3-tautology-proofs",
-    "front": "What should the final line of a tautology equivalence proof be?",
-    "back": "≡ T, with its law and ∎.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
   },
   {
     "id": "fc-1.3-identity-definition",
@@ -791,8 +761,8 @@
   {
     "id": "fc-1.4-domains-recall",
     "topic": "1.4-domains",
-    "front": "Why does ∀x(x²≥x) fail over ℝ?",
-    "back": "At x=1/2, x²=1/4<1/2.",
+    "front": "Why is ∀x (x² ≥ x) false over ℝ?",
+    "back": "x = 1/2 is a counterexample: (1/2)² = 1/4 < 1/2.",
     "tags": [
       "recall"
     ],
@@ -801,7 +771,7 @@
   {
     "id": "fc-1.4-universal-recall",
     "topic": "1.4-universal",
-    "front": "How many counterexamples refute ∀xP(x)?",
+    "front": "How many counterexamples refute ∀x P(x)?",
     "back": "One element of the domain where P is false.",
     "tags": [
       "recall"
@@ -811,7 +781,7 @@
   {
     "id": "fc-1.4-existential-recall",
     "topic": "1.4-existential",
-    "front": "What establishes ∃xP(x)?",
+    "front": "What establishes ∃x P(x)?",
     "back": "One witness x in the domain for which P(x) is true.",
     "tags": [
       "recall"
@@ -821,8 +791,8 @@
   {
     "id": "fc-1.4-counterexamples-definition",
     "topic": "1.4-counterexamples",
-    "front": "What is a counterexample to ∀xP(x)?",
-    "back": "A domain element a with P(a) false. One suffices. (To refute ∃xP(x) you must show every element fails.)",
+    "front": "What is a counterexample to ∀x P(x)?",
+    "back": "A domain element a with P(a) false. One suffices. (To refute ∃x P(x) you must show every element fails.)",
     "tags": [
       "class",
       "definition"
@@ -832,8 +802,8 @@
   {
     "id": "fc-1.4-counterexamples-recall",
     "topic": "1.4-counterexamples",
-    "front": "Refute ∀x∈ℕ(x²>0).",
-    "back": "x=0 is a counterexample.",
+    "front": "Refute ∀x ∈ ℕ(x² > 0).",
+    "back": "x = 0 is a counterexample.",
     "tags": [
       "recall"
     ],
@@ -853,7 +823,7 @@
   {
     "id": "fc-1.4-bound-free-recall",
     "topic": "1.4-bound-free",
-    "front": "Which variable is free in ∀xP(x,y)?",
+    "front": "Which variable is free in ∀x P(x, y)?",
     "back": "y is free; x is bound.",
     "tags": [
       "recall"
@@ -864,7 +834,7 @@
     "id": "fc-1.4-distribution-definition",
     "topic": "1.4-distribution",
     "front": "Which quantifier distributions are genuine equivalences?",
-    "back": "Equivalences:\n∀x(P ∧ Q) ≡ ∀xP ∧ ∀xQ\n∃x(P ∨ Q) ≡ ∃xP ∨ ∃xQ\nNot equivalences: ∀ over ∨, ∃ over ∧.",
+    "back": "Equivalences:\n∀x (P ∧ Q) ≡ ∀x P ∧ ∀x Q\n∃x (P ∨ Q) ≡ ∃x P ∨ ∃x Q\nNot equivalences: ∀ over ∨, ∃ over ∧.",
     "tags": [
       "class",
       "definition"
@@ -874,7 +844,7 @@
   {
     "id": "fc-1.4-distribution-recall",
     "topic": "1.4-distribution",
-    "front": "Is ∃x(P(x) ∧ Q(x)) ≡ ∃xP(x) ∧ ∃xQ(x)?",
+    "front": "Is ∃x (P(x) ∧ Q(x)) ≡ ∃x P(x) ∧ ∃x Q(x)?",
     "back": "No. The two witnesses may be different elements. ∃ distributes over ∨ only.",
     "tags": [
       "recall"
@@ -884,8 +854,8 @@
   {
     "id": "fc-1.4-negating-recall",
     "topic": "1.4-negating",
-    "front": "Negate “Some student is taking Calc 3.”",
-    "back": "No student is taking Calc 3: ∀x¬T(x), domain students in this class.",
+    "front": "Negate “Some student in this class is taking Calc 3.”",
+    "back": "No student in this class is taking Calc 3.\n∀x ¬T(x), domain: students in this class.",
     "tags": [
       "recall"
     ],
@@ -895,7 +865,7 @@
     "id": "fc-1.4-translation-definition",
     "topic": "1.4-translation",
     "front": "Translate “All A are B” and “Some A are B.”",
-    "back": "∀x(A(x) → B(x)) and ∃x(A(x) ∧ B(x)). State the domain and define each predicate first.",
+    "back": "∀x (A(x) → B(x)) and ∃x (A(x) ∧ B(x)). State the domain and define each predicate first.",
     "tags": [
       "class",
       "definition"
@@ -926,7 +896,7 @@
   {
     "id": "fc-1.5-nested-recall",
     "topic": "1.5-nested",
-    "front": "What does ∀x∃yP(x,y) allow y to depend on?",
+    "front": "What does ∀x∃y P(x, y) allow y to depend on?",
     "back": "The previously chosen x.",
     "tags": [
       "recall"
@@ -937,7 +907,7 @@
     "id": "fc-1.5-order-definition",
     "topic": "1.5-order",
     "front": "Which quantifier orders may be swapped?",
-    "back": "Same kind: ∀x∀y ≡ ∀y∀x and ∃x∃y ≡ ∃y∃x. Mixed orders cannot in general; ∃y∀xP(x,y) implies ∀x∃yP(x,y) but not conversely.",
+    "back": "Same kind: ∀x∀y ≡ ∀y∀x and ∃x∃y ≡ ∃y∃x. Mixed orders cannot in general; ∃y∀x P(x, y) implies ∀x∃y P(x, y) but not conversely.",
     "tags": [
       "class",
       "definition"
@@ -947,8 +917,8 @@
   {
     "id": "fc-1.5-order-recall",
     "topic": "1.5-order",
-    "front": "Which is stronger: ∃y∀xP or ∀x∃yP?",
-    "back": "∃y∀xP; one common witness works for every x.",
+    "front": "Which is stronger: ∃y∀x P or ∀x∃y P?",
+    "back": "∃y∀x P; one common witness works for every x.",
     "tags": [
       "recall"
     ],
@@ -968,8 +938,8 @@
   {
     "id": "fc-1.5-nests-recall",
     "topic": "1.5-nests",
-    "front": "Why is ∃x∀y(x+y=0) false over ℝ?",
-    "back": "For any proposed x, choose y=1−x; then the sum is 1.",
+    "front": "Why is ∃x∀y (x+y = 0) false over ℝ?",
+    "back": "For any proposed x, choose y = 1−x; then the sum is 1.",
     "tags": [
       "recall"
     ],
@@ -989,8 +959,8 @@
   {
     "id": "fc-1.5-translation-recall",
     "topic": "1.5-translation",
-    "front": "Translate nonzero real numbers have multiplicative inverses.",
-    "back": "∀x∈ℝ ∃y∈ℝ (x≠0→xy=1).",
+    "front": "Translate: every nonzero real has a multiplicative inverse.",
+    "back": "∀x ∈ ℝ ∃y ∈ ℝ (x ≠ 0 → xy = 1)",
     "tags": [
       "recall"
     ],
@@ -1000,7 +970,7 @@
     "id": "fc-1.5-unique-definition",
     "topic": "1.5-unique",
     "front": "Write “there is exactly one x with P(x)” using quantifiers.",
-    "back": "∃x(P(x) ∧ ∀z(P(z) → z = x)): existence plus uniqueness of the witness.",
+    "back": "∃x (P(x) ∧ ∀z (P(z) → z = x))\nExistence, then uniqueness of the witness.",
     "tags": [
       "class",
       "definition"
@@ -1031,8 +1001,8 @@
   {
     "id": "fc-1.5-negating-recall",
     "topic": "1.5-negating",
-    "front": "Negate ∀x∃y∀zP(x,y,z).",
-    "back": "∃x∀y∃z¬P(x,y,z).",
+    "front": "Negate ∀x∃y∀z P(x, y, z).",
+    "back": "∃x∀y∃z ¬P(x, y, z)",
     "tags": [
       "recall"
     ],
@@ -1042,7 +1012,7 @@
     "id": "fc-1.5-practice-recall",
     "topic": "1.5-practice",
     "front": "Does “none of a student’s friends are friends with each other” assert that the student has friends?",
-    "back": "No. It can hold vacuously.",
+    "back": "No. It is a universal statement, so it is vacuously true for a student with no friends.",
     "tags": [
       "recall"
     ],
@@ -1058,16 +1028,6 @@
       "definition"
     ],
     "priority": 1
-  },
-  {
-    "id": "fc-1.6-argument-recall",
-    "topic": "1.6-argument",
-    "front": "What is an argument form?",
-    "back": "A pattern obtained by replacing statements with propositional variables.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
   },
   {
     "id": "fc-1.6-validity-definition",
@@ -1102,16 +1062,6 @@
     "priority": 1
   },
   {
-    "id": "fc-1.6-tables-recall",
-    "topic": "1.6-tables",
-    "front": "What goes in the Reason column for a given hypothesis?",
-    "back": "prem. (premise).",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-1.6-equivalence-steps-definition",
     "topic": "1.6-equivalence-steps",
     "front": "How do equivalences and inference rules differ inside a derivation?",
@@ -1125,8 +1075,8 @@
   {
     "id": "fc-1.6-equivalence-steps-recall",
     "topic": "1.6-equivalence-steps",
-    "front": "May you use contraposition as an argument step?",
-    "back": "Yes, as an allowed logical equivalence, with a reference to the original step.",
+    "front": "May you use the contrapositive as a step in a derivation?",
+    "back": "Yes. It is an allowed equivalence, so cite the original step and the law.",
     "tags": [
       "recall"
     ],
@@ -1157,8 +1107,8 @@
   {
     "id": "fc-1.6-fallacies-recall",
     "topic": "1.6-fallacies",
-    "front": "Name p→q, ¬p, ∴¬q.",
-    "back": "Denying the hypothesis; invalid.",
+    "front": "Name the fallacy: p → q, ¬p ∴ ¬q",
+    "back": "Denying the hypothesis. Invalid: p = F, q = T makes both premises true and the conclusion false.",
     "tags": [
       "recall"
     ],
@@ -1178,8 +1128,8 @@
   {
     "id": "fc-1.6-rule-tautology-recall",
     "topic": "1.6-rule-tautology",
-    "front": "What proposition tests p→q,p,∴q?",
-    "back": "[(p→q)∧p]→q.",
+    "front": "Which proposition must be a tautology for modus ponens to be valid?",
+    "back": "[(p → q) ∧ p] → q",
     "tags": [
       "recall"
     ],
@@ -1188,7 +1138,7 @@
   {
     "id": "fc-1.6-mp-recall",
     "topic": "1.6-mp",
-    "front": "Which rule is p→q; p ∴ q?",
+    "front": "Which rule is p → q; p ∴ q?",
     "back": "Modus ponens.",
     "tags": [
       "recall"
@@ -1198,7 +1148,7 @@
   {
     "id": "fc-1.6-mt-recall",
     "topic": "1.6-mt",
-    "front": "Which rule is p→q; ¬q ∴ ¬p?",
+    "front": "Which rule is p → q; ¬q ∴ ¬p?",
     "back": "Modus tollens.",
     "tags": [
       "recall"
@@ -1209,7 +1159,7 @@
     "id": "fc-1.6-hs-definition",
     "topic": "1.6-hs",
     "front": "State hypothetical syllogism.",
-    "back": "p → q; q → r ∴ p → r.",
+    "back": "p → q\nq → r\n∴ p → r",
     "tags": [
       "class",
       "definition"
@@ -1219,7 +1169,7 @@
   {
     "id": "fc-1.6-hs-recall",
     "topic": "1.6-hs",
-    "front": "Which rule is p→q; q→r ∴ p→r?",
+    "front": "Which rule is p → q; q → r ∴ p → r?",
     "back": "Hypothetical syllogism.",
     "tags": [
       "recall"
@@ -1230,7 +1180,7 @@
     "id": "fc-1.6-ds-definition",
     "topic": "1.6-ds",
     "front": "State disjunctive syllogism.",
-    "back": "p ∨ q; ¬p ∴ q.",
+    "back": "p ∨ q\n¬p\n∴ q",
     "tags": [
       "class",
       "definition"
@@ -1240,7 +1190,7 @@
   {
     "id": "fc-1.6-ds-recall",
     "topic": "1.6-ds",
-    "front": "Which rule is p∨q; ¬p ∴ q?",
+    "front": "Which rule is p ∨ q; ¬p ∴ q?",
     "back": "Disjunctive syllogism.",
     "tags": [
       "recall"
@@ -1251,7 +1201,7 @@
     "id": "fc-1.6-add-definition",
     "topic": "1.6-add",
     "front": "State addition.",
-    "back": "p ∴ p ∨ q.",
+    "back": "p\n∴ p ∨ q",
     "tags": [
       "class",
       "definition"
@@ -1261,7 +1211,7 @@
   {
     "id": "fc-1.6-add-recall",
     "topic": "1.6-add",
-    "front": "Which rule is p ∴ p∨q?",
+    "front": "Which rule is p ∴ p ∨ q?",
     "back": "Addition.",
     "tags": [
       "recall"
@@ -1272,7 +1222,7 @@
     "id": "fc-1.6-simp-definition",
     "topic": "1.6-simp",
     "front": "State simplification.",
-    "back": "p ∧ q ∴ p.",
+    "back": "p ∧ q\n∴ p",
     "tags": [
       "class",
       "definition"
@@ -1282,7 +1232,7 @@
   {
     "id": "fc-1.6-simp-recall",
     "topic": "1.6-simp",
-    "front": "Which rule is p∧q ∴ p?",
+    "front": "Which rule is p ∧ q ∴ p?",
     "back": "Simplification.",
     "tags": [
       "recall"
@@ -1293,7 +1243,7 @@
     "id": "fc-1.6-conj-definition",
     "topic": "1.6-conj",
     "front": "State conjunction.",
-    "back": "p; q ∴ p ∧ q.",
+    "back": "p\nq\n∴ p ∧ q",
     "tags": [
       "class",
       "definition"
@@ -1303,7 +1253,7 @@
   {
     "id": "fc-1.6-conj-recall",
     "topic": "1.6-conj",
-    "front": "Which rule is p; q ∴ p∧q?",
+    "front": "Which rule is p; q ∴ p ∧ q?",
     "back": "Conjunction.",
     "tags": [
       "recall"
@@ -1314,7 +1264,7 @@
     "id": "fc-1.6-res-definition",
     "topic": "1.6-res",
     "front": "State resolution.",
-    "back": "p ∨ q; ¬p ∨ r ∴ q ∨ r.",
+    "back": "p ∨ q\n¬p ∨ r\n∴ q ∨ r",
     "tags": [
       "class",
       "definition"
@@ -1324,7 +1274,7 @@
   {
     "id": "fc-1.6-res-recall",
     "topic": "1.6-res",
-    "front": "Which rule is p∨q; ¬p∨r ∴ q∨r?",
+    "front": "Which rule is p ∨ q; ¬p ∨ r ∴ q ∨ r?",
     "back": "Resolution.",
     "tags": [
       "recall"
@@ -1343,30 +1293,10 @@
     "priority": 1
   },
   {
-    "id": "fc-1.7-direct-recall",
-    "topic": "1.7-direct",
-    "front": "What is the opening of a direct proof of p→q?",
-    "back": "Pf Suppose p. Then use definitions and established facts to derive q.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
-    "id": "fc-1.7-even-recall",
-    "topic": "1.7-even",
-    "front": "What must the witness k satisfy in n=2k?",
-    "back": "k∈ℤ.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-1.7-odd-recall",
     "topic": "1.7-odd",
-    "front": "Complete (2k+1)²=2(___)+1.",
-    "back": "2k²+2k.",
+    "front": "Complete: (2k + 1)² = 2(___) + 1.",
+    "back": "2k² + 2k. So the square of an odd integer is odd.",
     "tags": [
       "recall"
     ],
@@ -1386,18 +1316,8 @@
   {
     "id": "fc-1.7-square-recall",
     "topic": "1.7-square",
-    "front": "Why is the product of two squares a square?",
-    "back": "k²j²=(kj)² with kj∈ℤ.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
-    "id": "fc-1.7-rational-recall",
-    "topic": "1.7-rational",
-    "front": "What denominator restriction defines rationality?",
-    "back": "The integer denominator is nonzero.",
+    "front": "Why is the product of two perfect squares a perfect square?",
+    "back": "k² · j² = (kj)², and kj ∈ ℤ.",
     "tags": [
       "recall"
     ],
@@ -1438,8 +1358,8 @@
   {
     "id": "fc-1.7-factor-bound-recall",
     "topic": "1.7-factor-bound",
-    "front": "Negate a≤√n or b≤√n.",
-    "back": "a>√n and b>√n.",
+    "front": "Negate a ≤ √n or b ≤ √n.",
+    "back": "a > √n and b > √n.",
     "tags": [
       "recall"
     ],
@@ -1501,8 +1421,8 @@
   {
     "id": "fc-1.7-implication-contradiction-recall",
     "topic": "1.7-implication-contradiction",
-    "front": "Negate p→q before a contradiction proof.",
-    "back": "p∧¬q.",
+    "front": "Negate p → q before a contradiction proof.",
+    "back": "p ∧ ¬q — the implication fails exactly when p holds and q does not.",
     "tags": [
       "recall"
     ],
@@ -1523,7 +1443,7 @@
     "id": "fc-1.7-irrational-sum-recall",
     "topic": "1.7-irrational-sum",
     "front": "Must a sum of two irrationals be irrational?",
-    "back": "No. √2+(−√2)=0.",
+    "back": "No. √2+(−√2) = 0.",
     "tags": [
       "recall"
     ],
@@ -1541,16 +1461,6 @@
     "priority": 1
   },
   {
-    "id": "fc-1.7-biconditional-recall",
-    "topic": "1.7-biconditional",
-    "front": "How many directions must an iff proof establish?",
-    "back": "Both (→) and (←).",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-1.7-tfae-definition",
     "topic": "1.7-tfae",
     "front": "How do you prove several statements are equivalent (TFAE)?",
@@ -1564,8 +1474,8 @@
   {
     "id": "fc-1.7-tfae-recall",
     "topic": "1.7-tfae",
-    "front": "Which three arrows suffice for a,b,c TFAE?",
-    "back": "a→b, b→c, c→a.",
+    "front": "Which three arrows suffice for a, b, c TFAE?",
+    "back": "a → b, b → c, c → a.",
     "tags": [
       "recall"
     ],
@@ -1585,8 +1495,8 @@
   {
     "id": "fc-1.7-cuberoot2-recall",
     "topic": "1.7-cuberoot2",
-    "front": "What lemma is needed for the ∛2 proof?",
-    "back": "n³ even ⇒ n even; contrapose and expand (2k+1)³.",
+    "front": "Which lemma does the ∛2 proof need, and how is it proved?",
+    "back": "n³ even ⇒ n even. Contrapose: if n = 2k + 1 then n³ = 2(4k³ + 6k² + 3k) + 1 is odd.",
     "tags": [
       "recall"
     ],
@@ -1616,7 +1526,7 @@
   {
     "id": "fc-2.1-notation-recall",
     "topic": "2.1-notation",
-    "front": "Which endpoints are included in (a,b]?",
+    "front": "Which endpoints are included in (a, b]?",
     "back": "b is included; a is excluded.",
     "tags": [
       "recall"
@@ -1637,8 +1547,8 @@
   {
     "id": "fc-2.1-standard-recall",
     "topic": "2.1-standard",
-    "front": "Is ℕ=ℤ⁺ in this class?",
-    "back": "No; 0∈ℕ but 0∉ℤ⁺.",
+    "front": "Is ℕ = ℤ⁺ in this class?",
+    "back": "No. 0 ∈ ℕ but 0 ∉ ℤ⁺.",
     "tags": [
       "recall"
     ],
@@ -1668,7 +1578,7 @@
   {
     "id": "fc-2.1-equality-recall",
     "topic": "2.1-equality",
-    "front": "Does |A|=|B| imply A=B?",
+    "front": "Does |A| = |B| imply A = B?",
     "back": "No: {1} and {2} both have one element but differ.",
     "tags": [
       "recall"
@@ -1687,20 +1597,10 @@
     "priority": 1
   },
   {
-    "id": "fc-2.1-universal-recall",
-    "topic": "2.1-universal",
-    "front": "Is U always ℝ?",
-    "back": "No; it is the set of objects under consideration.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-2.1-subset-definition",
     "topic": "2.1-subset",
     "front": "Define A ⊆ B and say how to prove it.",
-    "back": "A ⊆ B means ∀x(x ∈ A → x ∈ B). To prove it, take an arbitrary x ∈ A and show x ∈ B.",
+    "back": "A ⊆ B means ∀x (x ∈ A → x ∈ B). To prove it, take an arbitrary x ∈ A and show x ∈ B.",
     "tags": [
       "class",
       "definition"
@@ -1710,8 +1610,8 @@
   {
     "id": "fc-2.1-subset-recall",
     "topic": "2.1-subset",
-    "front": "How do you disprove A⊆B?",
-    "back": "Find x∈A with x∉B.",
+    "front": "How do you disprove A ⊆ B?",
+    "back": "Find x ∈ A with x ∉ B.",
     "tags": [
       "recall"
     ],
@@ -1729,16 +1629,6 @@
     "priority": 1
   },
   {
-    "id": "fc-2.1-proper-recall",
-    "topic": "2.1-proper",
-    "front": "What extra condition turns ⊆ into ⊂?",
-    "back": "A≠B; B has an element outside A.",
-    "tags": [
-      "recall"
-    ],
-    "priority": 2
-  },
-  {
     "id": "fc-2.1-empty-subset-definition",
     "topic": "2.1-empty-subset",
     "front": "Which two subset facts hold for every set A?",
@@ -1752,7 +1642,7 @@
   {
     "id": "fc-2.1-empty-subset-recall",
     "topic": "2.1-empty-subset",
-    "front": "Why is ∅⊆A always true?",
+    "front": "Why is ∅ ⊆ A always true?",
     "back": "There are no elements of ∅ that could violate the inclusion.",
     "tags": [
       "recall"
@@ -1804,7 +1694,7 @@
   {
     "id": "fc-2.1-nested-recall",
     "topic": "2.1-nested",
-    "front": "Is {1}⊆{{1}}?",
+    "front": "Is {1} ⊆ {{1}}?",
     "back": "No, since 1 is not an element of {{1}}.",
     "tags": [
       "recall"
@@ -1882,16 +1772,6 @@
     "priority": 1
   },
   {
-    "id": "fc-1.1-english-207",
-    "topic": "1.1-conditional",
-    "front": "Translate: if p, then q",
-    "back": "p → q.",
-    "tags": [
-      "translation"
-    ],
-    "priority": 1
-  },
-  {
     "id": "fc-1.1-english-208",
     "topic": "1.1-conditional",
     "front": "Translate: p is sufficient for q",
@@ -1906,16 +1786,6 @@
     "topic": "1.1-conditional",
     "front": "Translate: q if p",
     "back": "p → q. In “q if p,” the part after “if” is the hypothesis.",
-    "tags": [
-      "translation"
-    ],
-    "priority": 1
-  },
-  {
-    "id": "fc-1.1-english-210",
-    "topic": "1.1-conditional",
-    "front": "Translate: q when p",
-    "back": "p → q. “When” works like “if.”",
     "tags": [
       "translation"
     ],

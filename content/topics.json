@@ -296,7 +296,7 @@
   {
     "id": "1.5-practice",
     "section": "1.5",
-    "title": "Class practice sheet",
+    "title": "Vacuous truth on the practice sheet",
     "order": 42,
     "notes": "## Definition and key facts\nThe sheet combines dependent witnesses, changing domains, and uniqueness. Its limit question was crossed out and is omitted.\n\n## Worked example\n∀x∀y∃z(x+y=z) is true over ℝ: choose z=x+y. ∃z∀x∀y(x+y=z) is false: (0,0) and (1,0) demand different z. “A student none of whose distinct friends are friends” need not have any friends.\n\n## Common mistake\nDo not accidentally add existence of two friends to a universal implication about pairs of friends.\n\n## How it shows up on the test\nExpect multi-part translation and negation questions like the homework."
   },
@@ -569,7 +569,7 @@
   {
     "id": "2.1-empty-subset",
     "section": "2.1",
-    "title": "∅⊆A and A⊆A",
+    "title": "∅ ⊆ A and A ⊆ A",
     "order": 81,
     "notes": "## Definition and key facts\nFor every set A, ∅⊆A and A⊆A. The first uses a vacuously true implication; the second uses reflexivity.\n\n## Worked example\nPf There is no x∈∅ that could fail to lie in A, so every element of ∅ belongs to A. Also, if x∈A then x∈A, so A⊆A. ∎\n\n## Common mistake\n∅⊆A does not imply ∅∈A. For A={1}, only the subset statement holds.\n\n## How it shows up on the test\nExplain why empty-set inclusion needs no element witness."
   },
