@@ -8,9 +8,9 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. No build, package install, or network service is required. KaTeX and its fonts are local; Unicode remains readable without it.
 
-Study in order: Flashcards (flip cards, then Learn) → Rapid-fire → Weakness report → Problem grind.
+Study in order: Flashcards (one set per section: flip cards, then Learn) → Rapid-fire → Weakness report → Problem grind.
 
-Learn (`#flashcards/learn`) works like Quizlet Learn: rounds of seven multiple-choice questions with distractors drawn from the same topic, then you mark each card Know or Still learning. Known cards leave the rotation; still-learning cards come back first in the next round. Marks feed the Leitner boxes (Know = Good, Don't know = Again) and appear on the flip-card view, which uses the same arrow keys.
+Flashcards are grouped into seven sets, one per section (`#flashcards/1.3`). Flip through a set marking Know or Don't know; the summary offers a pass over only the still-learning cards, Learn on the set, or the next set. Learn (`#flashcards/learn/1.3`) works like Quizlet Learn: rounds of seven multiple-choice questions with distractors drawn from the same topic, then you mark each card Know or Still learning. Known cards leave the rotation; still-learning cards come back first in the next round. Marks feed the Leitner boxes (Know = Good, Don't know = Again) and appear on the flip-card view, which uses the same arrow keys.
 
 Keyboard: home `1–4` selects a mode; `Esc` returns home; `?` shows help. Cards: `→` marks Know, `←` marks Don't know. Learn: `1–4` picks an answer, `→`/`←` marks it, `Enter` accepts the highlighted mark or starts the next round. Rapid-fire: type for auto-advance, `Enter` submits a miss, a wrong answer pauses the clock until `Enter`/`Space` (or pick a timed display in setup), Escape ends the session; every miss goes to a miss bank you can browse with arrow keys and drill directly; symbol buttons under the answer box insert ¬ ∧ ∨ → ↔ ∀ ∃ and friends if you cannot type them. Problems: `N`/`P` navigate, `H` reveals hints, `S` toggles the solution, `1`/`2`/`3` grades Wrong/Partly/Right. Shortcuts are inactive while typing scratch work; Tab navigates controls.
 

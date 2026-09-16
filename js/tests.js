@@ -1,7 +1,8 @@
 import {fresh,mastery,validate,missBank} from './store.js';
 import {matches,parse,canonical} from './normalize.js';
 import {choices,nextRound,shuffle,mark,status} from './learn.js';
-import {argument} from './generators.js';
+import {argument,show,generators} from './generators.js';
+import {evaluate} from './normalize.js';
 import {state} from './store.js';
 const results=[];export function test(name,fn){try{if(!fn())throw Error('Assertion false');results.push('PASS '+name);}catch(e){results.push('FAIL '+name+': '+e.message);}document.querySelector('#results').textContent=results.join('\n');document.title=results.some(r=>r.startsWith('FAIL'))?'FAIL':'PASS';}
 test('Empty progress has zero mastery',()=>mastery('t',[],[],fresh()).mastery===0);
@@ -43,3 +44,6 @@ test('Mark known raises the box and stores status',()=>{const keep=state.flashca
 test('Argument prompt stacks premises and conclusion',()=>argument('p → q; ¬q ∴ ¬p')==='p → q\n¬q\n∴ ¬p'&&argument('p ∴ p ∨ q')==='p\n∴ p ∨ q');
 test('Miss bank keeps only prompts whose latest attempt is wrong, newest first',()=>{const b=missBank([{t:1,prompt:'A',ok:false},{t:2,prompt:'B',ok:false},{t:3,prompt:'A',ok:true},{t:4,prompt:'C',ok:false}]);return b.map(a=>a.prompt).join()==='C,B';});
 test('Pause setting (0 ms) is valid',()=>{const s=fresh();s.settings.rfWrongDelayMs=0;return validate(s)===s;});
+test('Minimal parentheses printer',()=>show({o:'∨',l:{n:{a:'p'}},r:{o:'∧',l:{a:'q'},r:{a:'r'}}})==='¬p ∨ (q ∧ r)'&&show({o:'∧',l:{o:'∧',l:{a:'p'},r:{a:'q'}},r:{a:'r'}})==='p ∧ q ∧ r'&&show({o:'→',l:{a:'p'},r:{o:'→',l:{a:'q'},r:{a:'r'}}})==='p → (q → r)'&&show({n:{o:'∨',l:{a:'p'},r:{a:'q'}}})==='¬(p ∨ q)');
+test('Generated truth prompts are minimal and evaluate to their answer',()=>{for(let k=0;k<200;k++){const it=generators.truth(),[env,ex]=it.prompt.split('\n'),e=ex.replace('Evaluate ',''),vals=Object.fromEntries(env.split(', ').map(x=>[x[0],x.endsWith('T')]));const wrapped=e=>{if(e[0]!=='(')return false;let d=0;for(let i=0;i<e.length;i++){if(e[i]==='(')d++;if(e[i]===')')d--;if(!d)return i===e.length-1;}return false;};if(wrapped(e)||/¬\([a-z]\)|(?<![¬a-z])([a-z]) [∧∨→↔⊕] \1\b/.test(e))throw Error(e);if((evaluate(parse(e),vals)?'T':'F')!==it.answer)throw Error('eval '+e);}return true;});
+test('Set order follows topic order then priority',()=>{const o={a:1,b:2};const cs=[{id:'fc-1.1-b-0',topic:'b',priority:1},{id:'fc-1.1-a-1',topic:'a',priority:2},{id:'fc-1.1-a-0',topic:'a',priority:1},{id:'fc-1.3-x',topic:'a',priority:1}].filter(c=>c.id.split('-')[1]==='1.1').sort((x,y)=>(o[x.topic]||0)-(o[y.topic]||0)||x.priority-y.priority);return cs.map(c=>c.id).join()==='fc-1.1-a-0,fc-1.1-a-1,fc-1.1-b-0';});

@@ -184,7 +184,7 @@
   {
     "id": "1.3-neg",
     "section": "1.3",
-    "title": "Negation law law (Table 6)",
+    "title": "Negation law (Table 6)",
     "order": 26,
     "notes": "## Definition and key facts\np ∨ ¬p ≡ T; p ∧ ¬p ≡ F. A proposition and its negation exhaust the possibilities.\n\n## Worked example\np ∨ ¬p ≡ T [Negation law]\np ∧ ¬p ≡ F [Negation law]\nExample: substitute (r→s) for p everywhere; each identity still holds for this compound proposition.\n\n## Common mistake\nDo not change connectives or drop parentheses beyond the stated pattern.\n\n## How it shows up on the test\nIdentify the law or cite it in a successive-substitution proof."
   },
