@@ -3,8 +3,10 @@
 Run from this folder:
 
 ```sh
-python3 -m http.server 8000
+python3 serve.py
 ```
+
+(`python3 -m http.server 8000` also works, but it lets the browser cache old scripts; if a page stops loading after an update, hard refresh with Cmd+Shift+R.)
 
 Open http://localhost:8000. No build, package install, or network service is required. KaTeX and its fonts are local; Unicode remains readable without it.
 
