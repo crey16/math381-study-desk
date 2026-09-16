@@ -6,8 +6,11 @@ export const ROUND=7;
 export function shuffle(a,rnd=Math.random){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
 export const status=c=>state.flashcards[c.id]?.learn||'new';
 const sec=c=>c.id.split('-')[1];
-// Four answer choices: the card plus distractors from the same topic, then section, then anywhere; backs are distinct.
-export function choices(card,all,n=4,rnd=Math.random){const seen=new Set([card.back]),out=[card];for(const tier of [x=>x.topic===card.topic,x=>sec(x)===sec(card),()=>true]){for(const x of shuffle(all.filter(tier),rnd)){if(out.length>=n)break;if(x.id!==card.id&&!seen.has(x.back)){seen.add(x.back);out.push(x);}}}return shuffle(out,rnd);}
+// Four answer choices. Distractors must look like the right answer (line count, length, how symbolic,
+// whether it is a bare name) so the shape gives nothing away; same topic, then section, breaks ties.
+const shape=s=>{const t=s.trim(),sym=(t.match(/[¬∧∨⊕→↔≡∀∃∈∉⊆⊂∅≠≤≥∴∎]/g)||[]).length;return {lines:t.split('\n').length,len:t.length,sym:sym/Math.max(1,t.length),name:t.length<28&&/^[A-Z][a-z ]+\.?$/.test(t)?1:0};};
+export function distance(a,b){const x=shape(a),y=shape(b);return Math.abs(Math.log(x.len/y.len))+1.5*Math.abs(x.lines-y.lines)+30*Math.abs(x.sym-y.sym)+3*Math.abs(x.name-y.name);}
+export function choices(card,all,n=4,rnd=Math.random){const seen=new Set([card.back]),pool=[];for(const x of all){if(x.id===card.id||seen.has(x.back))continue;seen.add(x.back);pool.push({x,d:distance(card.back,x.back)+(x.topic===card.topic?0:sec(x)===sec(card)?.5:1)+.3*rnd()});}pool.sort((a,b)=>a.d-b.d);return shuffle([card,...pool.slice(0,n-1).map(p=>p.x)],rnd);}
 export function nextRound(pool,rnd=Math.random){const rank={learning:0,new:1,known:2};return shuffle(pool.filter(c=>status(c)!=='known'),rnd).sort((a,b)=>rank[status(a)]-rank[status(b)]).slice(0,ROUND);}
 export function mark(id,known){rate(id,known?'good':'again',known?'known':'learning');}
 export function resetLearn(ids){for(const id of ids)if(state.flashcards[id])delete state.flashcards[id].learn;save();}

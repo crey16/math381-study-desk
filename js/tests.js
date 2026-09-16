@@ -1,6 +1,6 @@
 import {fresh,mastery,validate,missBank} from './store.js';
 import {matches,parse,canonical} from './normalize.js';
-import {choices,nextRound,shuffle,mark,status} from './learn.js';
+import {choices,nextRound,shuffle,mark,status,distance} from './learn.js';
 import {argument,show,generators} from './generators.js';
 import {evaluate} from './normalize.js';
 import {state} from './store.js';
@@ -47,3 +47,5 @@ test('Pause setting (0 ms) is valid',()=>{const s=fresh();s.settings.rfWrongDela
 test('Minimal parentheses printer',()=>show({o:'∨',l:{n:{a:'p'}},r:{o:'∧',l:{a:'q'},r:{a:'r'}}})==='¬p ∨ (q ∧ r)'&&show({o:'∧',l:{o:'∧',l:{a:'p'},r:{a:'q'}},r:{a:'r'}})==='p ∧ q ∧ r'&&show({o:'→',l:{a:'p'},r:{o:'→',l:{a:'q'},r:{a:'r'}}})==='p → (q → r)'&&show({n:{o:'∨',l:{a:'p'},r:{a:'q'}}})==='¬(p ∨ q)');
 test('Generated truth prompts are minimal and evaluate to their answer',()=>{for(let k=0;k<200;k++){const it=generators.truth(),[env,ex]=it.prompt.split('\n'),e=ex.replace('Evaluate ',''),vals=Object.fromEntries(env.split(', ').map(x=>[x[0],x.endsWith('T')]));const wrapped=e=>{if(e[0]!=='(')return false;let d=0;for(let i=0;i<e.length;i++){if(e[i]==='(')d++;if(e[i]===')')d--;if(!d)return i===e.length-1;}return false;};if(wrapped(e)||/¬\([a-z]\)|(?<![¬a-z])([a-z]) [∧∨→↔⊕] \1\b/.test(e))throw Error(e);if((evaluate(parse(e),vals)?'T':'F')!==it.answer)throw Error('eval '+e);}return true;});
 test('Set order follows topic order then priority',()=>{const o={a:1,b:2};const cs=[{id:'fc-1.1-b-0',topic:'b',priority:1},{id:'fc-1.1-a-1',topic:'a',priority:2},{id:'fc-1.1-a-0',topic:'a',priority:1},{id:'fc-1.3-x',topic:'a',priority:1}].filter(c=>c.id.split('-')[1]==='1.1').sort((x,y)=>(o[x.topic]||0)-(o[y.topic]||0)||x.priority-y.priority);return cs.map(c=>c.id).join()==='fc-1.1-a-0,fc-1.1-a-1,fc-1.1-b-0';});
+test('Learn distractors match the answer shape',()=>{const laws=[['dist','Distributive.','p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)\np ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)'],['comm','Commutative.','p ∨ q ≡ q ∨ p\np ∧ q ≡ q ∧ p'],['idem','Idempotent.','p ∨ p ≡ p\np ∧ p ≡ p'],['dn','Double negation.','¬¬p ≡ p'],['abs','Absorption.','p ∨ (p ∧ q) ≡ p\np ∧ (p ∨ q) ≡ p']];const deck=laws.flatMap(([k,name,forms])=>[{id:'fc-1.3-'+k+'-recall',topic:'1.3-'+k,back:name},{id:'fc-1.3-'+k+'-definition',topic:'1.3-'+k,back:forms}]);const o=choices(deck[1],deck,4,seq());return o.length===4&&o.every(x=>x.back.includes('≡'))&&choices(deck[0],deck,4,seq()).every(x=>!x.back.includes('≡'));});
+test('Shape distance: name vs formula is far, formula vs formula is near',()=>distance('Distributive.','p ∨ q ≡ q ∨ p')>distance('p ∧ q ≡ q ∧ p','p ∨ q ≡ q ∨ p'));
