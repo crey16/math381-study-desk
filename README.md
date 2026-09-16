@@ -19,3 +19,5 @@ Progress is stored only in `localStorage["math381.v1"]`. Export for backup or tr
 Open http://localhost:8000/tests.html for browser assertions. The app contains 187 cards, 86 topic notes, and 425 worked problems: 282 textbook, 27 homework, 56 class/practice, 60 generated. See [DECISIONS.md](DECISIONS.md) for source corrections and exact exercise coverage. The supplied 1.1 and 1.7 extracts stop at #27 and #24, respectively; later textbook exercise prompts are not included. Mixed quantifier-inference exercises and Cartesian products are excluded.
 
 Authoring helpers in `scripts/` are optional and are not part of the runtime. They require Node only if you choose to run them; the study app does not. Untracked `materials/` files are the user's original source materials; `SPEC.md` and `CLAUDE_CODE_PROMPT.md` are the private build brief and are also left untracked on purpose. `.qa/` is ignored via `.gitignore`.
+
+This public repository contains the runnable study app and its authored content. The private source packets and build briefs remain outside the repository.
