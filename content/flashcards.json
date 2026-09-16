@@ -203,7 +203,7 @@
     "id": "fc-1.6-mp-20",
     "topic": "1.6-mp",
     "front": "State modus ponens.",
-    "back": "p → q\np\n∴ q",
+    "back": "p\np → q\n∴ q",
     "tags": [
       "class"
     ],
@@ -213,7 +213,7 @@
     "id": "fc-1.6-mt-21",
     "topic": "1.6-mt",
     "front": "State modus tollens.",
-    "back": "p → q\n¬q\n∴ ¬p",
+    "back": "¬q\np → q\n∴ ¬p",
     "tags": [
       "class"
     ],
@@ -1138,7 +1138,7 @@
   {
     "id": "fc-1.6-mp-recall",
     "topic": "1.6-mp",
-    "front": "Which rule is p → q; p ∴ q?",
+    "front": "Which rule is p; p → q ∴ q?",
     "back": "Modus ponens.",
     "tags": [
       "recall"
@@ -1148,7 +1148,7 @@
   {
     "id": "fc-1.6-mt-recall",
     "topic": "1.6-mt",
-    "front": "Which rule is p → q; ¬q ∴ ¬p?",
+    "front": "Which rule is ¬q; p → q ∴ ¬p?",
     "back": "Modus tollens.",
     "tags": [
       "recall"

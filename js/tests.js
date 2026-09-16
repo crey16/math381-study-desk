@@ -1,5 +1,5 @@
 import {fresh,mastery,validate,missBank} from './store.js';
-import {matches,parse,canonical,methodCanonical} from './normalize.js';
+import {matches,parse,canonical,methodCanonical,extendable} from './normalize.js';
 import {choices,nextRound,shuffle,mark,status,distance} from './learn.js';
 import {argument,show,generators,full,methodGenerate,setMethodBank,bookForm,bookRules,setRuleForm} from './generators.js';
 import {evaluate} from './normalize.js';
@@ -57,3 +57,5 @@ fetch('content/rapidfire.json').then(r=>r.json()).then(j=>{const bank=j.method,b
 test('Book form matches Table 1 layout',()=>bookForm(bookRules.mp)==='p\np → q\n---\n∴ q'&&bookForm(bookRules.add)==='p\n---\n∴ p ∨ q');
 test('Book mode shows p, q, r only; renamed mode may not',()=>{setRuleForm('book');for(let k=0;k<40;k++){const it=generators.rule();if(!/^Name the rule:\n/.test(it.prompt)||/[abst]/.test(it.prompt.split('\n').slice(1).join('')))throw Error(it.prompt);}setRuleForm('renamed');return true;});
 test('Name the rule never asks about a fallacy',()=>{for(let k=0;k<80;k++)if(generators.rule().answer==='invalid')return false;return true;});
+test('Prefix guard: dom waits, domination and mp fire',()=>extendable('dom')&&!extendable('domination')&&!extendable('mp')&&extendable('d','method')&&!extendable('direct proof','method')&&!extendable('zzz'));
+test('Rules listed in Table 1 order',()=>argument('¬q; p → q ∴ ¬p')==='¬q\np → q\n∴ ¬p'&&bookForm(bookRules.mt)==='¬q\np → q\n---\n∴ ¬p');
