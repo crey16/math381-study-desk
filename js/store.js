@@ -1,5 +1,5 @@
 export const KEY='math381.v1';
-export const fresh=()=>({version:1,settings:{theme:'dark',rfDuration:120,rfWrongDelayMs:1200},flashcards:{},rapidfire:{attempts:[],sessions:[]},problems:{}});
+export const fresh=()=>({version:1,settings:{theme:'dark',rfDuration:120,rfWrongDelayMs:0},flashcards:{},rapidfire:{attempts:[],sessions:[]},problems:{}});
 export function validate(s){
  if(!s||s.version!==1||!s.settings||!s.flashcards||!s.problems||!Array.isArray(s.rapidfire?.attempts)||!Array.isArray(s.rapidfire?.sessions))throw Error('Not a MATH 381 version 1 progress file.');
  if(!['dark','light'].includes(s.settings.theme)||![0,60,120,180].includes(s.settings.rfDuration)||!Number.isFinite(s.settings.rfWrongDelayMs)||s.settings.rfWrongDelayMs<0)throw Error('Invalid settings.');
@@ -9,7 +9,9 @@ export function validate(s){
  return s;
 }
 export let state=fresh();
-export function load(){const raw=localStorage.getItem(KEY);if(raw)state=validate(JSON.parse(raw));return state;}
+export function load(){const raw=localStorage.getItem(KEY);if(raw)state=validate(JSON.parse(raw));if(!state.settings.wrongMode){state.settings.wrongMode=1;state.settings.rfWrongDelayMs=0;}return state;}
+// Prompts whose most recent attempt was wrong, newest first. A miss leaves the bank once answered correctly.
+export function missBank(attempts){const latest=new Map();for(const a of attempts)if(a.prompt)latest.set(a.prompt,a);return [...latest.values()].filter(a=>!a.ok).sort((a,b)=>b.t-a.t);}
 export function save(){state.rapidfire.attempts=state.rapidfire.attempts.slice(-2000);state.rapidfire.sessions=state.rapidfire.sessions.slice(-200);for(const p of Object.values(state.problems))p.attempts=p.attempts.slice(-100);try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){alert('Progress could not be saved. Export it now. '+e.message);}}
 export function replace(s){state=validate(s);save();}
 export function rate(id,rating,learn){const old=state.flashcards[id]||{box:1,seen:0};state.flashcards[id]={...old,learn:learn||old.learn,box:rating==='again'?1:Math.min(4,old.box+({hard:0,good:1,easy:2}[rating]||0)),seen:old.seen+1,lastSeen:Date.now(),lastRating:rating};if(!state.flashcards[id].learn)delete state.flashcards[id].learn;save();}

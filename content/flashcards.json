@@ -364,7 +364,7 @@
     "id": "fc-1.1-conditional-definition",
     "topic": "1.1-conditional",
     "front": "List the English phrasings of p → q.",
-    "back": "if p, then q · p only if q · q if p · q whenever p · q is necessary for p · p is sufficient for q · q unless ¬p.",
+    "back": "All of these mean p → q:\nif p, then q\np only if q\nq if p\nq whenever p\nq is necessary for p\np is sufficient for q\nq unless ¬p",
     "tags": [
       "class",
       "definition"
@@ -561,7 +561,7 @@
     "id": "fc-1.3-identity-definition",
     "topic": "1.3-identity",
     "front": "State the identity law (Table 6), both forms.",
-    "back": "p ∧ T ≡ p; p ∨ F ≡ p.",
+    "back": "p ∧ T ≡ p\np ∨ F ≡ p",
     "tags": [
       "class",
       "definition"
@@ -582,7 +582,7 @@
     "id": "fc-1.3-dom-definition",
     "topic": "1.3-dom",
     "front": "State the domination law (Table 6), both forms.",
-    "back": "p ∨ T ≡ T; p ∧ F ≡ F.",
+    "back": "p ∨ T ≡ T\np ∧ F ≡ F",
     "tags": [
       "class",
       "definition"
@@ -603,7 +603,7 @@
     "id": "fc-1.3-idem-definition",
     "topic": "1.3-idem",
     "front": "State the idempotent law (Table 6), both forms.",
-    "back": "p ∨ p ≡ p; p ∧ p ≡ p.",
+    "back": "p ∨ p ≡ p\np ∧ p ≡ p",
     "tags": [
       "class",
       "definition"
@@ -645,7 +645,7 @@
     "id": "fc-1.3-comm-definition",
     "topic": "1.3-comm",
     "front": "State the commutative law (Table 6), both forms.",
-    "back": "p ∨ q ≡ q ∨ p; p ∧ q ≡ q ∧ p.",
+    "back": "p ∨ q ≡ q ∨ p\np ∧ q ≡ q ∧ p",
     "tags": [
       "class",
       "definition"
@@ -666,7 +666,7 @@
     "id": "fc-1.3-assoc-definition",
     "topic": "1.3-assoc",
     "front": "State the associative law (Table 6), both forms.",
-    "back": "p ∨ (q ∨ r) ≡ (p ∨ q) ∨ r; p ∧ (q ∧ r) ≡ (p ∧ q) ∧ r.",
+    "back": "p ∨ (q ∨ r) ≡ (p ∨ q) ∨ r\np ∧ (q ∧ r) ≡ (p ∧ q) ∧ r",
     "tags": [
       "class",
       "definition"
@@ -687,7 +687,7 @@
     "id": "fc-1.3-dist-definition",
     "topic": "1.3-dist",
     "front": "State the distributive law (Table 6), both forms.",
-    "back": "p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r); p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r).",
+    "back": "p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)\np ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)",
     "tags": [
       "class",
       "definition"
@@ -718,7 +718,7 @@
     "id": "fc-1.3-abs-definition",
     "topic": "1.3-abs",
     "front": "State the absorption law (Table 6), both forms.",
-    "back": "p ∨ (p ∧ q) ≡ p; p ∧ (p ∨ q) ≡ p.",
+    "back": "p ∨ (p ∧ q) ≡ p\np ∧ (p ∨ q) ≡ p",
     "tags": [
       "class",
       "definition"
@@ -739,7 +739,7 @@
     "id": "fc-1.3-neg-definition",
     "topic": "1.3-neg",
     "front": "State the negation law (Table 6), both forms.",
-    "back": "p ∨ ¬p ≡ T; p ∧ ¬p ≡ F.",
+    "back": "p ∨ ¬p ≡ T\np ∧ ¬p ≡ F",
     "tags": [
       "class",
       "definition"
@@ -864,7 +864,7 @@
     "id": "fc-1.4-distribution-definition",
     "topic": "1.4-distribution",
     "front": "Which quantifier distributions are genuine equivalences?",
-    "back": "∀x(P ∧ Q) ≡ ∀xP ∧ ∀xQ and ∃x(P ∨ Q) ≡ ∃xP ∨ ∃xQ. Not ∀ over ∨, and not ∃ over ∧.",
+    "back": "Equivalences:\n∀x(P ∧ Q) ≡ ∀xP ∧ ∀xQ\n∃x(P ∨ Q) ≡ ∃xP ∨ ∃xQ\nNot equivalences: ∀ over ∨, ∃ over ∧.",
     "tags": [
       "class",
       "definition"
@@ -958,7 +958,7 @@
     "id": "fc-1.5-nests-definition",
     "topic": "1.5-nests",
     "front": "Over ℝ, give the truth values of the four nests for x + y = 0.",
-    "back": "∀x∀y: F. ∀x∃y: T (y = −x). ∃x∀y: F (given x, take y = 1 − x). ∃x∃y: T (0, 0).",
+    "back": "∀x∀y: F\n∀x∃y: T (take y = −x)\n∃x∀y: F (given x, take y = 1 − x)\n∃x∃y: T (0, 0)",
     "tags": [
       "class",
       "definition"
@@ -1147,7 +1147,7 @@
     "id": "fc-1.6-fallacies-definition",
     "topic": "1.6-fallacies",
     "front": "Name the two fallacies and give their forms.",
-    "back": "Affirming the conclusion: p → q, q ∴ p. Denying the hypothesis: p → q, ¬p ∴ ¬q. Both invalid.",
+    "back": "Affirming the conclusion: p → q, q ∴ p\nDenying the hypothesis: p → q, ¬p ∴ ¬q\nBoth are invalid.",
     "tags": [
       "class",
       "definition"
@@ -1627,7 +1627,7 @@
     "id": "fc-2.1-standard-definition",
     "topic": "2.1-standard",
     "front": "List the standard number sets and their symbols.",
-    "back": "ℕ = {0, 1, 2, …}; ℤ integers; ℤ⁺ = {1, 2, …}; ℚ rationals; ℚ⁺ positive rationals; ℝ reals; ℝ⁺ positive reals; ℂ complex numbers.",
+    "back": "ℕ = {0, 1, 2, …}\nℤ = integers\nℤ⁺ = {1, 2, …}\nℚ rationals, ℚ⁺ positive rationals\nℝ reals, ℝ⁺ positive reals\nℂ complex numbers",
     "tags": [
       "class",
       "definition"
